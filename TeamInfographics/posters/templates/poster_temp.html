@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+    
+    <style>
+
+
+html, body {
+margin: 0;
+width: 297mm;
+height: 420mm;
+/* font-family: 'Advent Pro', sans-serif; */
+/* font-weight: 600; */
+background-color: rgb(226,255,188);
+border: dotted 1px black;
+}
+
+</style>
+
+    <title>LPZ testposter</title>
+
+</head>
+<body>
+    <h1>Hello {{ data.0.ward_name }}</h1>
+
+    <p>Sliced data below</p>
+    {% for row in data|slice:"1" %}
+    <tr>
+      <td> {{row.0}} </td>
+      <td> {{row.1}} </td>
+    </tr>
+    {% endfor %}
+</body>
+</html>

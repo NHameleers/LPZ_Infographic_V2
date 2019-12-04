@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+    <title>LPZ poster</title>
+
+</head>
+<body>
+
+    <div class="row">
+
+        
+
+        <!-- MAIN COLUMN 1-->
+        <div class="column main-column">
+
+            <div class="col-1-title-box">
+                <h1>Leren en Verbeteren</h1>
+                <h3 id="team-name" class="zero-margin">Team: Borkeld</h3>
+                <h3 class="zero-margin">Datum: 15-05-2019</h3>
+                <h3 class="zero-margin">Aantal cliënten: 8 (8 met behandeling)</h3>
+            </div>
+
+            <div class="col-1-infobox">
+
+                <!-- Beleidsafspraken -->
+                <div class="beleid-info">
+                    <h1>Beleidsafspraken</h1>
+                    <p class="zero-margin">Het percentage afspraken die zijn vastgelegd in zorgdossier cliënt was...</p>
+                    <table class="beleid-tabel">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>Eigen team</th>
+                                <th></th>
+                                <th>Andere PG-teams</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="img-blocks"><img class="table-img" src="{% static "images\trans_reanimeren.PNG" %}" alt=""></td>
+                                <td class="text-left">Reanimeren</td>
+                                <td class="tableborder percentage-blocks">100%</td>
+                                <td> </td>
+                                <td class="tableborder percentage-blocks">100%</td>
+                            </tr>
+                            <tr>
+                                <td class="img-blocks"><img class="table-img" src="{% static "images\trans_infuus.PNG" %}" alt=""></td>
+                                <td class="text-left">Levensverlengende<br>behandelingen</td>
+                                <td class="tableborder percentage-blocks">100%</td>
+                                <td> </td>
+                                <td class="tableborder percentage-blocks">69%</td>
+                            </tr>
+                            <tr>
+                                <td class="img-blocks"><img class="table-img" src="{% static "images\trans_ziekenhuis.PNG" %}" alt=""></td>
+                                <td class="text-left">Ziekenhuis-<br>opnamen</td>
+                                <td class="tableborder percentage-blocks">100%</td>
+                                <td> </td>
+                                <td class="tableborder percentage-blocks">52%</td>
+                            </tr>
+                            <tr>
+                                <td class="img-blocks"><img class="table-img" src="{% static "images\trans_checklist.PNG" %}" alt=""></td>
+                                <td class="text-left">Anders</td>
+                                <td class="tableborder percentage-blocks">0%</td>
+                                <td> </td>
+                                <td class="tableborder percentage-blocks">2%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                
+                <img class="dots" src="{% static "images\trans_dots.PNG" %}" alt="">
+                
+
+
+
+
+                <!-- Medicatieveiligheid -->
+                <div class="medicatie-info">
+                    <div class="column col-67">
+                        <h1>Medicatieveiligheid</h1>
+                        <p class="zero-margin">Zijn medicatiefouten in het team besproken?</p>
+                        
+                    </div>
+
+                    <div class="column col-33">
+                        
+                        <img class="pillen-img" src="{% static "images\pillen.JPG" %}" alt="">
+                    </div>
+
+                    <!-- TODO: Tabel symmetrisch maken -->
+                    <div class="column col-100">
+                        <p class="text-right zero-bottom-margin">Andere PG-teams</p>
+                            <table class="med-tabel">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="checkbox checkbox-fill"></td>
+                                        <td>Ja, multidisciplinair</td>
+                                        <td class="checkbox">4%</td>
+                                    </tr>
+                                    <tr>
+                                    <td class="checkbox "></td>
+                                    <td>Ja, maar niet multidisciplinair</td>
+                                    <td class="checkbox">75%</td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox "></td>
+                                    <td>Nee</td>
+                                    <td class="checkbox">21%</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p>Percentage cliënten waarbij een formele medicatiereview met zorgmedewerker heeft plaatsgevonden</p>
+                    </div>
+                    <div class="column col-50 text-right">
+                        <p class="zero-margin">Eigen team</p>
+                        
+                        <img class="medicatie-pie border-radius-50" src="{% static "images\pypie_team_med.png" %}" alt="">
+                    </div>     
+                    <div class="column col-50 text-center">
+                        <p class="zero-margin">% bij andere<br>PG-teams</p>
+                        
+                        <img class="medicatie-pie-ander border-radius-50" src="{% static "images\pypie_ward_med.png" %}" alt="">
+                    </div>
+
+                </div> <!-- end medicatie-info -->
+
+
+                
+            </div> <!-- col-1-infobox -->
+
+            
+
+        </div> <!-- end main column 2-->
+
+
+
+
+
+
+
+
+        <!-- MAIN COLUMN 2 -->
+        <div class="column main-column">
+
+            <div class="col-2-infobox">
+
+                <div class="eten-info">
+                    <h1>Aandacht voor eten en drinken</h1>
+                    <h2 class="zero-margin">Voedselvoorkeuren besproken</h2>
+
+                    <table class="eten-tabel">
+                        <thead>
+                            <th></th>
+                            <th>Eigen team</th>
+                            <th>Andere PG-teams</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Voorkeuren bepalen</td>
+                                <td>80%</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>Aanbieder</td>
+                                <td>80%</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>Hulp</td>
+                                <td>80%</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>Tijd en plaats</td>
+                                <td>80%</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>Anders</td>
+                                <td>80%</td>
+                                <td>80%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <img class="dots" src="{% static "images\trans_dots.PNG" %}" alt="">
+
+
+
+
+                <!-- Decubitus-->
+                <div class="decubitus-info">
+                    <div class="column col-67">
+                        <h1>Decubitus</h1>
+                        <p class="zero-margin">Het percentage cliënten met<br>
+                        decubitus cat. 2 en hoger was</p>
+                    </div>
+                    <div class="column col-33">
+                        <img class="decubitus-img" src="{% static "images/liggend_mannetje.JPG" %}" alt="liggend_mannetje">
+                    </div>
+
+                    <div class="column col-50 text-center">
+                        
+                        <img class="decubitus-pie border-radius-50" src="{% static "images\pypie_team_dec.png" %}" alt="">
+                        <p class="zero-margin">Eigen team</p>
+                    </div>
+                    <div class="column col-50">
+                        
+                        <img class="decubitus-pie-ander border-radius-50" src="{% static "images\pypie_ward_dec.png" %}" alt="">
+                        <p class="zero-margin">Andere PG teams</p>
+                    </div>
+
+                </div>
+
+                
+
+                <!-- Casuïstiekbespreking-->
+                <div class="casus-info">
+                    <div class="column col-100">
+                        <h1>Casuïstiekbespreking</h1>
+                        <p class="zero-margin">Heeft er binnen het team een casuïstiekbespreking (MDO) decubitus plaatsgevonden?</p>
+                    </div>
+                    <div class="column col-33 text-center">
+                        
+                        <img class="bespreking-img" src="{% static "images\samen_aan_tafel.JPG" %}" alt="">
+                    </div>
+                    <div class="column col-67">
+                        <svg width="85mm" height="40mm">
+                            <text x="11mm" y="5mm">Eigen team</text>
+                            <circle cx="41mm" cy="27mm" r="12mm" fill="#64B9DE" stroke="#585A4C" stroke-width="1"></circle>
+                            <text class="bubble-text" x="41mm" y="27mm" text-anchor="middle" dominant-baseline="middle">21%</text>
+                            <circle cx="20mm" cy="20mm" r="12mm" fill="#007FFF" stroke="black" stroke-width="1"></circle>
+                            <text class="bubble-text" x="20mm" y="20mm" text-anchor="middle" dominant-baseline="middle">N.V.T.</text>
+                            <text x="55mm" y="15mm">% JA andere</text>
+                            <text x="55mm" y="20mm">PG-teams</text>
+                        </svg>
+                    </div>
+
+
+                </div>
+    
+
+            </div> <!-- end col-2-infobox-->
+
+
+        </div> <!-- end main column 2-->
+
+
+
+
+
+
+
+
+        <!-- MAIN COLUMN 3 -->
+        <div class="column main-column">
+            <div class="col-3-infobox">
+
+                <!-- Continentieplan -->
+                <div class="continentie">
+                    <h1>Continentieplan</h1>
+                    <h2 class="zero-margin">Aanwezig</h2>
+
+                    <table class="continentie-tabel">
+                        <thead>
+                            <th></th>
+                            <th>Eigen team</th>
+                            <th>Andere PG-teams</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Voorkeuren</td>
+                                <td>75%</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr>
+                                <td>...</td>
+                                <td>75%</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr>
+                                <td>Hulp</td>
+                                <td>75%</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr>
+                                <td>Incontinentiemat</td>
+                                <td>75%</td>
+                                <td>75%</td>
+                            </tr>
+                            <tr>
+                                <td>Anders</td>
+                                <td>75%</td>
+                                <td>75%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <img class="dots" src="{% static "images\trans_dots.PNG" %}" alt="">
+
+
+
+
+                <!-- Middelen en maatregelen rond vrijheid-->
+                <div class="vrijheid-info">
+                    <h1>Middelen en maatregelen rond vrijheid</h1>
+                    <p class="zero-margin">Het percentage cliënten bij wie onderstaande typen middelen en maatregelen (M&M) zijn toegepast, was...</p>
+                    
+                    <!-- vrijheid 1-->
+                    <div class="row vrijheid-rij-1">
+                        <div class="column col-95 vrijheid-img-rij">
+                            <div class="column col-33"><img class="col-67" src="{% static "images\trans_pillen2.PNG" %}" alt=""></div>
+                            <div class="column col-33"><img class="col-67 border-radius-50" src="{% static "images\rolstoel.JPG" %}" alt=""></div>
+                            <div class="column col-33"><img class="col-67" src="{% static "images\trans_loep.PNG" %}" alt=""></div>
+                        </div>
+                        <div class="column col-100">
+                            <table class="vrijheid-tabel">
+                                <thead>
+                                    <tr>
+                                        <th>Eigen team</th>
+                                        <th></th>
+                                        <th>Andere PG-teams</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="vrijheid-wolk" width="25%">50%</td>
+                                        <td width="50%">Mechanisch<br>
+                                            <span class="small-font">(bijv. bedhekken / tafelblad)</span>
+                                        </td>
+                                        <td class="vrijheid-wolk">17%</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="25%" class="vrijheid-wolk">75%</td>
+                                        <td>Elektronisch<br>
+                                            <span class="small-font">(bijv. alarm / camera / sensor)</span>
+                                        </td>
+                                        <td class="vrijheid-wolk">62%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vrijheid-wolk">0%</td>
+                                        <td>Fysiek<br>
+                                            <span class="small-font">(iemand in bedwang houden)</span>
+                                        </td>
+                                        <td class="vrijheid-wolk">7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vrijheid-wolk">0%</td>
+                                        <td>Eén op één toezicht</td>
+                                        <td class="vrijheid-wolk">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="25%" class="vrijheid-wolk">0%</td>
+                                        <td width="50%">Farmacologisch</td>
+                                        <td width="25%" class="vrijheid-wolk">13%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vrijheid-wolk">0%</td>
+                                        <td>Psychologisch<br>
+                                            <span class="small-font">(bijv. dwingend spreken)</span>
+                                        </td>
+                                        <td class="vrijheid-wolk">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vrijheid-wolk">0%</td>
+                                        <td>Afzondering</td>
+                                        <td class="vrijheid-wolk">0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="vrijheid-wolk">12%</td>
+                                        <td>Overig</td>
+                                        <td class="vrijheid-wolk">6%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> <!-- end row-vrijheid-rij-1 -->
+                </div> <!-- end vrijheid-info -->
+            </div> <!-- end col-3-infobox -->
+
+            <!-- <div class="col-organisatie">
+                <img class="logo" src="{% static "images\za_logo.PNG" %}" alt="logo">
+            </div> -->
+
+        </div> <!-- end main-column -->
+    </div> <!-- end row -->
+
+</body>
+</html>
+    
