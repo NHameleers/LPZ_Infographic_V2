@@ -13,7 +13,8 @@ html, body {
     width: 420mm;
     font-family: 'Advent Pro', sans-serif;
     /* font-weight: 600; */
-    background-color: rgb(226,255,188);
+    background-color: white;
+    color: #001C3D;
     border: dotted 1px black;
 }
 
@@ -25,6 +26,7 @@ h1 {
     font-family: aileron;
     font-weight: bold;
     margin: 0;
+    color: #E84E10;
 }
 
 p {
@@ -38,7 +40,6 @@ thead {
     margin-bottom: 0;
 }
 
-/* why does this not work? */
 td {
     font-weight: bold;
     font-size: 1.2em;
@@ -55,7 +56,7 @@ td {
 }
 
 .main-column {
-    width: 32%;
+    width: 32.5%;
     height: 100%;
     margin: 0% 0.1% 0% 0.5%;
 }
@@ -84,7 +85,7 @@ td {
 .col-1-infobox {
     min-height: 88%;
     width: 100%;
-    border: solid 5mm #96C283;
+    border: solid 3mm #001C3D;
     border-radius: 1em / 1em;
     padding: .5em;
 }
@@ -93,7 +94,7 @@ td {
 .col-2-infobox {
     min-height: 99%;
     margin-top: 1mm;
-    border: solid 5mm #96C283;
+    border: solid 3mm #001C3D;
     border-radius: 1em / 1em;
     padding: .5em;
 }
@@ -101,7 +102,7 @@ td {
 .col-3-infobox {
     min-height: 99%;
     margin-top: 1mm;
-    border: solid 5mm #96C283;
+    border: solid 3mm #001C3D;
     border-radius: 1em / 1em;
     padding: .5em;
 }
@@ -113,6 +114,10 @@ td {
 
 .zero-bottom-margin {
     margin-bottom: 0;
+}
+
+.img-border {
+    border: solid 3px #00A2DB;
 }
 
 
@@ -159,19 +164,19 @@ td {
 }
 
 .tableborder {
-    border: solid 2px #1D9D52;
-
+    border: solid 1px #00A2DB;
 }
+
+
 
 
 
 /* **************************************** MEDICATIEVEILIGHEID ******************************** */
 
 
-/* .medicatie-info {
-    min-height: 40%;
-    width: 100%
-} */
+.medicatie-info {
+    margin-top: 1em;
+}
 
 .med-tabel {
     width: 90%;
@@ -190,7 +195,6 @@ td {
     width: 60%;
     height: auto;
     margin-left: 10%;
-    border: solid 3px #1D9D52;
     border-radius: .5em / .5em;
 }
 
@@ -223,14 +227,14 @@ td {
 } */
 
 .checkbox {
-    border: solid 1px #1D9D52;
+    border: solid 1px #001C3D;
     width: 12mm;
     height: 12mm;
     text-align: center;
 }
 
 .checkbox-fill {
-    background-color: #96C283;
+    background-color: #E84E10;
 }
 /* **************************************** ETEN EN DRINKEN ********************************  */
 
@@ -239,7 +243,7 @@ td {
     height: 60%;
     text-align: center;
     border-collapse: separate;
-    border-spacing: .25em .5em;
+    border-spacing: .5em .5em;
     padding-right: 5%;
 }
 
@@ -248,13 +252,20 @@ td {
     font-family: aileron;
     font-weight: bold;
     width: 20%;
-
+    border: solid 1px #00A2DB;
 }
 
+.eten-tabel td {
+    height: 10mm;
+}
 
 /* **************************************** DECUBITUS ******************************** */
+
+.decubitus-info {
+    margin: 1em 0em 1em 0em;
+}
+
 .decubitus-img {
-    border: solid 3px #1D9D52;
     border-radius: .5em / .5em;
     width: 3cm;
     height: 2.5cm;
@@ -281,9 +292,13 @@ td {
 .bespreking-img {
     width: 70%;
     height: auto;
-    border: solid 3px #1D9D52;
     border-radius: .5em / .5em;
     margin-top: 12%;
+}
+
+/* Casus info doesn't have a clear height, therefore adding the margin on the h1 */
+.casus-info h1{
+    margin-top: 1em;
 }
 
 .cirkel-team {
@@ -303,7 +318,7 @@ td {
     height: 60%;
     text-align: center;
     border-collapse: separate;
-    border-spacing: .25em .5em;
+    border-spacing: .5em .5em;
     padding-right: 5%;
 }
 
@@ -312,14 +327,18 @@ td {
     font-family: aileron;
     font-weight: bold;
     width: 20%;
+    border: solid 1px #00A2DB;
+}
 
+.continentie-tabel td {
+    height: 10mm;
 }
 
 /* **************************************** VRIJHEID ******************************** */
 
 .vrijheid-tabel {
     min-width: 85%;
-    border: solid 8px #96C283;
+    border: solid 8px white;
     border-radius: 1em;
     border-collapse: separate;
     border-spacing: 1em 0.8em;
@@ -329,6 +348,11 @@ td {
 
 .vrijheid-tabel tr {
     height: 10mm;
+}
+
+/* font in this table needs to be smaller to make everything fit */
+.vrijheid-tabel td {
+    font-size: 0.9em;
 }
 
 .vrijheid-tabel td:nth-child(odd) {
@@ -341,7 +365,7 @@ td {
 }
 
 .vrijheid-img-rij img {
-    width: 30%;
+    width: 55%;
     height: auto;
 }
 
@@ -351,7 +375,7 @@ td {
 } */
 
 .vrijheid-wolk {
-    background-color: #96C283;
+    background-color: #00A2DB;
 }
 
 
@@ -480,7 +504,7 @@ achtergrondpaars: #C391C2
 blauw (tekstwolkjes): #56B0E4
 
 achtergrond-groen: #DFE9B4
-grote border groen: #96C283
+grote border groen: #001C3D
 image border groen: #1D9D52
 blauw Ja/nee cirkel: #007FFF
 blauwgrijs perc cirkel: #64B9DE
