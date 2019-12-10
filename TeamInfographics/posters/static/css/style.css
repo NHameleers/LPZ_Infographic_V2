@@ -26,7 +26,7 @@ h1 {
     font-family: aileron;
     font-weight: bold;
     margin: 0;
-    color: #E84E10;
+    color: #001C3D;
 }
 
 p {
@@ -85,16 +85,16 @@ td {
 .col-1-infobox {
     min-height: 88%;
     width: 100%;
-    border: solid 3mm #001C3D;
+    /* border: solid 3mm #001C3D; */
     border-radius: 1em / 1em;
-    padding: .5em;
+    /* padding: .5em; */
 }
 
 
 .col-2-infobox {
     min-height: 99%;
     margin-top: 1mm;
-    border: solid 3mm #001C3D;
+    /* border: solid 2mm #001C3D; */
     border-radius: 1em / 1em;
     padding: .5em;
 }
@@ -102,7 +102,7 @@ td {
 .col-3-infobox {
     min-height: 99%;
     margin-top: 1mm;
-    border: solid 3mm #001C3D;
+    /* border: solid 2mm #001C3D; */
     border-radius: 1em / 1em;
     padding: .5em;
 }
@@ -127,7 +127,12 @@ td {
 .beleid-info {
     height: 40%;
     width: 100%;
+    background-color: rgba(232, 78, 16, 1);
+    border-radius: 1em / 1em;
+    padding: 0.5em;
 }
+
+
 
 .beleid-tabel {
     width: 100%;
@@ -138,9 +143,16 @@ td {
     padding-right: 5%;
 }
 
-.beleid-tabel td:nth-child(n+3):nth-child(-n+5) {
+.beleid-tabel td:nth-child(3) {
     font-family: aileron;
     font-weight: bold;
+    border: solid 1px #001C3D;
+}
+
+.beleid-tabel td:nth-child(5){
+    font-family: aileron;
+    font-weight: bold;
+    border: solid 1px #001C3D;
 }
 
 
@@ -293,8 +305,19 @@ td {
 
 /* **************************************** DECUBITUS ******************************** */
 
+/* .decubitus-block {
+    background-color: rgba(0, 28, 61, 1);
+    color: white;
+}
+
+.decubitus-block h1 {
+    color: white;
+} */
+
+
 .decubitus-info {
     margin: 1em 0em 1em 0em;
+    height: 100%;
 }
 
 .decubitus-img {
@@ -541,4 +564,21 @@ image border groen: #1D9D52
 blauw Ja/nee cirkel: #007FFF
 blauwgrijs perc cirkel: #64B9DE
 grijze border cirkel: #585A4C
+*/
+
+
+/*
+UM kleuren
+
+Blauw:
+rgba(0, 28, 61, 1)
+rgba(0, 162, 219)
+rgba(0, 83, 112)
+rgba(171, 209, 255)
+
+Oranje-achtig:
+rgba(232, 78, 0, 1)
+rgba(248, 136, 74)
+rgba(248, 178, 150)
+rgba(161, 54, 11)
 */

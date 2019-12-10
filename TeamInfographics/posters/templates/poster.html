@@ -222,55 +222,59 @@
 
 
                 <!-- Decubitus-->
-                <div class="decubitus-info">
-                    <div class="column col-67">
-                        <h1>Decubitus</h1>
-                        <p class="zero-margin">Het percentage cliënten met<br>
-                        decubitus cat. 2 en hoger was</p>
-                    </div>
-                    <div class="column col-33">
-                        <img class="decubitus-img img-border" src="{% static "images/liggend_mannetje.JPG" %}" alt="liggend_mannetje">
+                <div class="row decubitus-block">
+
+                    <div class="decubitus-info">
+                        <div class="column col-67">
+                            <h1>Decubitus</h1>
+                            <p class="zero-margin">Het percentage cliënten met<br>
+                            decubitus cat. 2 en hoger was</p>
+                        </div>
+                        <div class="column col-33">
+                            <img class="decubitus-img img-border" src="{% static "images/liggend_mannetje.JPG" %}" alt="liggend_mannetje">
+                        </div>
+
+                        <div class="column col-50 text-center">
+                            
+                            <img class="decubitus-pie border-radius-50" src="{% static "images\pypie_team_dec.png" %}" alt="">
+                            <p class="zero-margin">Eigen team</p>
+                        </div>
+                        <div class="column col-50">
+                            
+                            <img class="decubitus-pie-ander border-radius-50" src="{% static "images\pypie_ward_dec.png" %}" alt="">
+                            <p class="zero-margin">Andere PG teams</p>
+                        </div>
+
                     </div>
 
-                    <div class="column col-50 text-center">
-                        
-                        <img class="decubitus-pie border-radius-50" src="{% static "images\pypie_team_dec.png" %}" alt="">
-                        <p class="zero-margin">Eigen team</p>
-                    </div>
-                    <div class="column col-50">
-                        
-                        <img class="decubitus-pie-ander border-radius-50" src="{% static "images\pypie_ward_dec.png" %}" alt="">
-                        <p class="zero-margin">Andere PG teams</p>
-                    </div>
+                    
 
-                </div>
-
-                
-
-                <!-- Casuïstiekbespreking-->
-                <div class="casus-info">
-                    <div class="column col-100">
-                        <h1>Casuïstiekbespreking</h1>
-                        <p class="zero-margin">Heeft er binnen het team een casuïstiekbespreking (MDO) decubitus plaatsgevonden?</p>
-                    </div>
-                    <div class="column col-33 text-center">
-                        
-                        <img class="bespreking-img img-border" src="{% static "images\trans_samen_aan_tafel.png" %}" alt="">
-                    </div>
-                    <div class="column col-67">
-                        <svg width="85mm" height="40mm">
-                            <text x="11mm" y="5mm">Eigen team</text>
-                            <circle cx="41mm" cy="27mm" r="12mm" fill="#ABD1FF" stroke="#585A4C" stroke-width="1"></circle>
-                            <text class="bubble-text" x="41mm" y="27mm" text-anchor="middle" dominant-baseline="middle">21%</text>
-                            <circle cx="20mm" cy="20mm" r="12mm" fill="#00A2DB" stroke="black" stroke-width="1"></circle>
-                            <text class="bubble-text" x="20mm" y="20mm" text-anchor="middle" dominant-baseline="middle">N.V.T.</text>
-                            <text x="55mm" y="15mm">% JA andere</text>
-                            <text x="55mm" y="20mm">PG-teams</text>
-                        </svg>
-                    </div>
+                    <!-- Decubitus: Casuïstiekbespreking-->
+                    <div class="casus-info">
+                        <div class="column col-100">
+                            <h1>Casuïstiekbespreking</h1>
+                            <p class="zero-margin">Heeft er binnen het team een casuïstiekbespreking (MDO) decubitus plaatsgevonden?</p>
+                        </div>
+                        <div class="column col-33 text-center">
+                            
+                            <img class="bespreking-img img-border" src="{% static "images\trans_samen_aan_tafel.png" %}" alt="">
+                        </div>
+                        <div class="column col-67">
+                            <svg width="85mm" height="40mm">
+                                <text x="11mm" y="5mm">Eigen team</text>
+                                <circle cx="41mm" cy="27mm" r="12mm" fill="#ABD1FF" stroke="#585A4C" stroke-width="1"></circle>
+                                <text class="bubble-text" x="41mm" y="27mm" text-anchor="middle" dominant-baseline="middle">21%</text>
+                                <circle cx="20mm" cy="20mm" r="12mm" fill="#00A2DB" stroke="black" stroke-width="1"></circle>
+                                <text class="bubble-text" x="20mm" y="20mm" text-anchor="middle" dominant-baseline="middle">N.V.T.</text>
+                                <text x="55mm" y="15mm">% JA andere</text>
+                                <text x="55mm" y="20mm">PG-teams</text>
+                            </svg>
+                        </div>
 
 
-                </div>
+                    </div>
+
+                </div> <!-- end decubitus row -->
     
 
             </div> <!-- end col-2-infobox-->
