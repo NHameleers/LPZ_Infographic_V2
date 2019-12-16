@@ -127,7 +127,7 @@ td {
 .beleid-info {
     height: 40%;
     width: 100%;
-    background-color: rgba(232, 78, 16, 1);
+    /* background-color: rgba(232, 78, 16, 1); */
     border-radius: 1em / 1em;
     padding: 0.5em;
 }
@@ -373,17 +373,37 @@ td {
     height: 60%;
     text-align: center;
     border-collapse: separate;
-    border-spacing: .5em .5em;
+    border-spacing: .75em .5em;
     padding-right: 5%;
 }
 
-/* 2e en 3e kolom */
-.continentie-tabel td:nth-child(n+2):nth-child(-n+4) {
+/* gekleurde rijen in tabel */
+.continentie-tabel tbody tr:nth-child(1) {
+    background-color: #E84E10;
+}
+
+.continentie-tabel tbody tr:nth-child(n+2):nth-child(-n+6) {
+    background-color: #F8884A;
+}
+
+.continentie-tabel tbody tr:nth-child(7) {
+    background-color: #00A2DB;
+}
+
+
+.continentie-tabel td:nth-child(1) {
+    font-size: 1.8em;
+}
+
+/* 3e kolom */
+.continentie-tabel td:nth-child(3) {
     font-family: aileron;
     font-weight: bold;
-    width: 20%;
-    border: solid 1px #00A2DB;
+    border: solid 1px #001C3D;
+    width: 17%;
 }
+
+
 
 .continentie-tabel td {
     height: 10mm;
