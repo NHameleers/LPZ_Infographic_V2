@@ -34,117 +34,119 @@
 
             <div class="col-1-infobox">
 
-                <!-- Beleidsafspraken -->
-                <div class="beleid-info">
-                    <h1>Beleidsafspraken</h1>
-                    <p class="zero-margin">Het percentage afspraken die zijn vastgelegd in zorgdossier cliënt was...</p>
-                    <table class="beleid-tabel">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                                <th>Eigen team</th>
-                                <th></th>
-                                <th>Andere PG-teams</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="img-blocks"><img class="table-img" src="{% static "images\trans_reanimeren.PNG" %}" alt=""></td>
-                                <td class="text-left">Reanimeren</td>
-                                <td class="tableborder percentage-blocks">100%</td>
-                                <td> </td>
-                                <td class="tableborder percentage-blocks">100%</td>
-                            </tr>
-                            <tr>
-                                <td class="img-blocks"><img class="table-img" src="{% static "images\trans_infuus.PNG" %}" alt=""></td>
-                                <td class="text-left">Levensverlengende<br>behandelingen</td>
-                                <td class="tableborder percentage-blocks">100%</td>
-                                <td> </td>
-                                <td class="tableborder percentage-blocks">69%</td>
-                            </tr>
-                            <tr>
-                                <td class="img-blocks"><img class="table-img" src="{% static "images\trans_ziekenhuis.PNG" %}" alt=""></td>
-                                <td class="text-left">Ziekenhuis-<br>opnamen</td>
-                                <td class="tableborder percentage-blocks">100%</td>
-                                <td> </td>
-                                <td class="tableborder percentage-blocks">52%</td>
-                            </tr>
-                            <tr>
-                                <td class="img-blocks"><img class="table-img" src="{% static "images\trans_checklist.PNG" %}" alt=""></td>
-                                <td class="text-left">Anders</td>
-                                <td class="tableborder percentage-blocks">0%</td>
-                                <td> </td>
-                                <td class="tableborder percentage-blocks">2%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                
-                <!-- <img class="dots" src="{% static "images\trans_dots.PNG" %}" alt=""> -->
-                
-
-
-
-
-                <!-- Medicatieveiligheid -->
-                <div class="medicatie-info">
-                    <div class="column col-67">
-                        <h1>Medicatieveiligheid</h1>
-                        <p class="zero-margin">Zijn medicatiefouten in het team besproken?</p>
-                        
-                    </div>
-
-                    <div class="column col-33">
-                        
-                        <img class="pillen-img img-border" src="{% static "images\pillen.JPG" %}" alt="">
-                    </div>
-
-                    <!-- TODO: Tabel symmetrisch maken -->
-                    <div class="column col-100">
-                        <p class="text-right zero-bottom-margin">Andere PG-teams</p>
-                            <table class="med-tabel">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="checkbox checkbox-fill">&#10004;</td>
-                                        <td>Ja, multidisciplinair</td>
-                                        <td class="checkbox">4%</td>
-                                    </tr>
-                                    <tr>
-                                    <td class="checkbox "></td>
-                                    <td>Ja, maar niet multidisciplinair</td>
-                                    <td class="checkbox">75%</td>
+                <div class="row">
+                    <!-- Beleidsafspraken -->
+                    <div class="beleid-info">
+                        <h1>Beleidsafspraken</h1>
+                        <p class="zero-margin">Het percentage afspraken die zijn vastgelegd in zorgdossier cliënt was...</p>
+                        <table class="beleid-tabel">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th>Eigen team</th>
+                                    <th></th>
+                                    <th>Andere PG-teams</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="img-blocks"><img class="table-img" src="{% static "images\trans_reanimeren.PNG" %}" alt=""></td>
+                                    <td class="text-left">Reanimeren</td>
+                                    <td class="tableborder percentage-blocks">100%</td>
+                                    <td> </td>
+                                    <td class="tableborder percentage-blocks">100%</td>
                                 </tr>
                                 <tr>
-                                    <td class="checkbox "></td>
-                                    <td>Nee</td>
-                                    <td class="checkbox">21%</td>
+                                    <td class="img-blocks"><img class="table-img" src="{% static "images\trans_infuus.PNG" %}" alt=""></td>
+                                    <td class="text-left">Levensverlengende<br>behandelingen</td>
+                                    <td class="tableborder percentage-blocks">100%</td>
+                                    <td> </td>
+                                    <td class="tableborder percentage-blocks">69%</td>
                                 </tr>
-                                </tbody>
-                            </table>
-                            <p>Percentage cliënten waarbij een formele medicatiereview met zorgmedewerker heeft plaatsgevonden</p>
-                    </div>
-                    <div class="column col-50 text-right">
-                        <p class="zero-margin">Eigen team</p>
-                        
-                        <img class="medicatie-pie border-radius-50" src="{% static "images\pypie_team_med.png" %}" alt="">
-                    </div>     
-                    <div class="column col-50 text-center">
-                        <p class="zero-margin">% bij andere<br>PG-teams</p>
-                        
-                        <img class="medicatie-pie-ander border-radius-50" src="{% static "images\pypie_ward_med.png" %}" alt="">
+                                <tr>
+                                    <td class="img-blocks"><img class="table-img" src="{% static "images\trans_ziekenhuis.PNG" %}" alt=""></td>
+                                    <td class="text-left">Ziekenhuis-<br>opnamen</td>
+                                    <td class="tableborder percentage-blocks">100%</td>
+                                    <td> </td>
+                                    <td class="tableborder percentage-blocks">52%</td>
+                                </tr>
+                                <tr>
+                                    <td class="img-blocks"><img class="table-img" src="{% static "images\trans_checklist.PNG" %}" alt=""></td>
+                                    <td class="text-left">Anders</td>
+                                    <td class="tableborder percentage-blocks">0%</td>
+                                    <td> </td>
+                                    <td class="tableborder percentage-blocks">2%</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                </div> <!-- end medicatie-info -->
+                    
+                    <!-- <img class="dots" src="{% static "images\trans_dots.PNG" %}" alt=""> -->
+                    
 
+
+
+
+                    <!-- Medicatieveiligheid -->
+                    <div class="medicatie-info">
+                        <div class="column col-67">
+                            <h1>Medicatieveiligheid</h1>
+                            <p class="zero-margin">Zijn medicatiefouten in het team besproken?</p>
+                            
+                        </div>
+
+                        <div class="column col-33">
+                            
+                            <img class="pillen-img img-border" src="{% static "images\pillen.JPG" %}" alt="">
+                        </div>
+
+                        <!-- TODO: Tabel symmetrisch maken -->
+                        <div class="column col-100">
+                            <p class="text-right zero-bottom-margin">Andere PG-teams</p>
+                                <table class="med-tabel">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="checkbox checkbox-fill">&#10004;</td>
+                                            <td>Ja, multidisciplinair</td>
+                                            <td class="checkbox">4%</td>
+                                        </tr>
+                                        <tr>
+                                        <td class="checkbox "></td>
+                                        <td>Ja, maar niet multidisciplinair</td>
+                                        <td class="checkbox">75%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="checkbox "></td>
+                                        <td>Nee</td>
+                                        <td class="checkbox">21%</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p>Percentage cliënten waarbij een formele medicatiereview met zorgmedewerker heeft plaatsgevonden</p>
+                        </div>
+                        <div class="column col-50 text-right">
+                            <p class="zero-margin">Eigen team</p>
+                            
+                            <img class="medicatie-pie border-radius-50" src="{% static "images\pypie_team_med.png" %}" alt="">
+                        </div>     
+                        <div class="column col-50 text-center">
+                            <p class="zero-margin">% bij andere<br>PG-teams</p>
+                            
+                            <img class="medicatie-pie-ander border-radius-50" src="{% static "images\pypie_ward_med.png" %}" alt="">
+                        </div>
+
+                    </div> <!-- end medicatie-info -->
+
+                </div> <!-- end row -->
 
                 
             </div> <!-- col-1-infobox -->
@@ -213,7 +215,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> <!-- end eten-info -->
 
 
                 <!-- <img class="dots" src="{% static "images\trans_dots.PNG" %}" alt=""> -->
@@ -293,65 +295,6 @@
         <div class="column main-column">
             <div class="col-3-infobox">
 
-                <!-- Continentieplan -->
-                <div class="continentie">
-                    <h1>Continentieplan</h1>
-                    <p class="zero-margin">Is een plan voor zorg rondom de toiletgang aanwezig in het zorgdossier?</p>
-
-                    <table class="continentie-tabel">
-                        <thead>
-                            <th>Eigen team</th>
-                            <th></th>
-                            <th>Andere PG-teams</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="checkbox">&#10004;</td>
-                                <td id="continentie-ja-rij">Ja, afspraken zijn vastgelegd over:</td>
-                                <td>80%</td>
-                            </tr>
-                            <tr>
-                                <td class="checkbox"></td>
-                                <td>Voorkeuren & gewoontes t.a.v. toiletgang</td>
-                                <td>70%</td>
-                            </tr>
-                            <tr>
-                                <td class="checkbox">&#10004;</td>
-                                <td>Manieren ondersteuning zoveel mogelijk zelfstandige toiletgang</td>
-                                <td>60%</td>
-                            </tr>
-                            <tr>
-                                <td class="checkbox">&#10004;</td>
-                                <td>Benodigde hulp bij toiletgang</td>
-                                <td>40%</td>
-                            </tr>
-                            <tr>
-                                <td class="checkbox"></td>
-                                <td>Passend gebruik incontinentiematerialen</td>
-                                <td>50%</td>
-                            </tr>
-                            <tr>
-                                <td class="checkbox"></td>
-                                <td>Anders</td>
-                                <td>10%</td>
-                            </tr>
-                            <tr>
-                                <td class="checkbox"></td>
-                                <td id="continentie-nee-rij">Nee, geen afspraken vastgelegd</td>
-                                <td>20%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                </div>
-
-
-
-                <!-- <img class="dots" src="{% static "images\trans_dots.PNG" %}" alt=""> -->
-
-
-
 
                 <!-- Middelen en maatregelen rond vrijheid-->
                 <div class="vrijheid-info">
@@ -428,6 +371,73 @@
                         </div>
                     </div> <!-- end row-vrijheid-rij-1 -->
                 </div> <!-- end vrijheid-info -->
+
+
+
+
+
+
+                <!-- Continentieplan -->
+                <div class="continentie-info">
+                    <h1>Continentieplan</h1>
+                    <p class="zero-margin">Is een plan voor zorg rondom de toiletgang aanwezig in het zorgdossier?</p>
+
+                    <table class="continentie-tabel">
+                        <thead>
+                            <th>Eigen team</th>
+                            <th></th>
+                            <th>Andere PG-teams</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="checkbox">&#10004;</td>
+                                <td id="continentie-ja-rij">Ja, afspraken zijn vastgelegd over:</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>Voorkeuren & gewoontes t.a.v. toiletgang</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox">&#10004;</td>
+                                <td>Manieren ondersteuning zoveel mogelijk zelfstandige toiletgang</td>
+                                <td>60%</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox">&#10004;</td>
+                                <td>Benodigde hulp bij toiletgang</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>Passend gebruik incontinentiematerialen</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td>Anders</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td class="checkbox"></td>
+                                <td id="continentie-nee-rij">Nee, geen afspraken vastgelegd</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div> <!-- end continentie-info -->
+
+
+
+                <!-- <img class="dots" src="{% static "images\trans_dots.PNG" %}" alt=""> -->
+
+
+
+
+                
             </div> <!-- end col-3-infobox -->
 
             <!-- <div class="col-organisatie">

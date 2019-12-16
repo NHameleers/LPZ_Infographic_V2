@@ -13,7 +13,7 @@ html, body {
     width: 420mm;
     font-family: 'Advent Pro', sans-serif;
     /* font-weight: 600; */
-    background-color: white;
+    background-color: rgba(199, 234, 255, 1);
     color: #001C3D;
     border: dotted 1px black;
 }
@@ -88,6 +88,8 @@ td {
     /* border: solid 3mm #001C3D; */
     border-radius: 1em / 1em;
     /* padding: .5em; */
+    overflow: auto;
+    background-color: rgba(0, 162, 219, 0.3);
 }
 
 
@@ -97,6 +99,8 @@ td {
     /* border: solid 2mm #001C3D; */
     border-radius: 1em / 1em;
     padding: .5em;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, .3);
 }
 
 .col-3-infobox {
@@ -105,6 +109,7 @@ td {
     /* border: solid 2mm #001C3D; */
     border-radius: 1em / 1em;
     padding: .5em;
+    background-color: rgba(0, 162, 219, 0.3);
 }
 
 
@@ -126,10 +131,13 @@ td {
 
 .beleid-info {
     height: 40%;
-    width: 100%;
-    /* background-color: rgba(232, 78, 16, 1); */
+    width: 97%;
+    /* background-color: rgba(0, 162, 219, .6); */
     border-radius: 1em / 1em;
     padding: 0.5em;
+    float: left;
+    border: 2mm solid rgba(0, 162, 219, 0.6);
+    margin: 0.5em 0.5em;
 }
 
 
@@ -188,6 +196,13 @@ td {
 
 .medicatie-info {
     margin-top: 1em;
+    /* background-color: rgba(0, 162, 219, 0.3); */
+    height: 100%;
+    float: left;
+    border-radius: 1em / 1em;
+    padding: 0.5em;
+    border: 2mm solid rgba(0, 162, 219, 0.6);
+    margin: 0.5em 0.5em;
 }
 
 .med-tabel {
@@ -305,12 +320,15 @@ td {
 
 /* **************************************** DECUBITUS ******************************** */
 
-/* .decubitus-block {
-    background-color: rgba(0, 28, 61, 1);
-    color: white;
+.decubitus-block {
+    /* background-color: rgba(255, 255, 255, .3); */
+    height: 100%;
+    overflow: auto;
+    border-radius: 1em / 1em;
+    padding: 0.5em;
 }
 
-.decubitus-block h1 {
+/* .decubitus-block h1 {
     color: white;
 } */
 
@@ -413,7 +431,6 @@ td {
 
 .vrijheid-tabel {
     min-width: 85%;
-    border: solid 8px white;
     border-radius: 1em;
     border-collapse: separate;
     border-spacing: 1em 0.8em;
