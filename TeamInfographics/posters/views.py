@@ -2,7 +2,7 @@ from django.shortcuts import render
 from posters.models import Lpz2019V1 
 import pandas as pd
 
-df = pd.read_csv('I:/LPZ/Infographic/data/Data zorgaccent variabelen infographic_final.csv')
+df = pd.read_csv('F:/2020_01_06_Selectie_backup_I-schijf/LPZ/Infographic/data/Data zorgaccent variabelen infographic_final.csv')
 
 
 # Create your views here.

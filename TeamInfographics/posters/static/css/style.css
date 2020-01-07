@@ -13,7 +13,7 @@ html, body {
     width: 420mm;
     font-family: 'Advent Pro', sans-serif;
     /* font-weight: 600; */
-    background-color: rgba(199, 234, 255, 1);
+    /* background-color: rgba(199, 234, 255, 1); */
     color: #001C3D;
     border: dotted 1px black;
 }
@@ -89,7 +89,7 @@ td {
     border-radius: 1em / 1em;
     /* padding: .5em; */
     overflow: auto;
-    background-color: rgba(0, 162, 219, 0.3);
+    /* background-color: rgba(0, 162, 219, 0.3); */
 }
 
 
@@ -109,7 +109,7 @@ td {
     /* border: solid 2mm #001C3D; */
     border-radius: 1em / 1em;
     padding: .5em;
-    background-color: rgba(0, 162, 219, 0.3);
+    /* background-color: rgba(0, 162, 219, 0.3); */
 }
 
 
@@ -136,7 +136,9 @@ td {
     border-radius: 1em / 1em;
     padding: 0.5em;
     float: left;
-    border: 2mm solid rgba(0, 162, 219, 0.6);
+    /* border: 2mm solid rgba(0, 162, 219, 0.6); */
+    border: solid 2mm #F8884A;
+    /* background-color: rgba(0, 162, 219, 0.5); */
     margin: 0.5em 0.5em;
 }
 
@@ -201,8 +203,16 @@ td {
     float: left;
     border-radius: 1em / 1em;
     padding: 0.5em;
-    border: 2mm solid rgba(0, 162, 219, 0.6);
     margin: 0.5em 0.5em;
+
+
+    /* border: 2mm solid rgba(0, 162, 219, 0.6); */
+
+    /* alleen verticale borders */
+    /* border-width: 5px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(45deg, #F8884A, #F8884A) 1 100%; */
 }
 
 .med-tabel {
@@ -266,12 +276,13 @@ td {
 /* **************************************** ETEN EN DRINKEN ********************************  */
 
 .eten-info {
-    background-color: rgba(255, 255, 255, .3);
+    /* background-color: rgba(255, 255, 255, .3); */
+    /* border: 2mm solid rgba(0, 162, 219, 0.6); */
     float: left;
     border-radius: 1em / 1em;
     padding: 0.5em;
     /* border: 2mm solid rgba(0, 162, 219, 0.3); */
-    margin: 0.25em 0.25em 2em 0.25em;}
+    margin: 0.25em 0.25em 1em 0.25em;}
 
 
 .eten-tabel {
@@ -283,17 +294,48 @@ td {
     padding-right: 5%;
 }
 
+
+/* TABLE ROW */
 /* gekleurde rijen in tabel */
 .eten-tabel tbody tr:nth-child(1) {
-    background-color: #E84E10;
+    /* background-color: #E84E10; */
+    /* border: solid 1px #E84E10; */
 }
 
 .eten-tabel tbody tr:nth-child(n+2):nth-child(-n+6) {
-    background-color: #F8884A;
+    /* background-color: #F8884A; */
+    /* border: solid 1px #F8884A; */
+
 }
 
 .eten-tabel tbody tr:nth-child(7) {
-    background-color: #00A2DB;
+    /* background-color: #00A2DB; */
+    /* border: solid 1px #00A2DB; */
+}
+
+
+/* TABLE DATA */
+/* gekleurde rijen in tabel */
+.eten-tabel tbody tr:nth-child(1) td {
+    /* background-color: #E84E10; */
+    border: solid 2px #E84E10;
+    border-radius: .3em / .3em;
+
+}
+
+.eten-tabel tbody tr:nth-child(n+2):nth-child(-n+6) td {
+    /* background-color: #F8884A; */
+    border: solid 2px #F8884A;
+    border-radius: .3em / .3em;
+
+
+}
+
+.eten-tabel tbody tr:nth-child(7) td {
+    /* background-color: #00A2DB; */
+    border: solid 2px #00A2DB;
+    border-radius: .3em / .3em;
+
 }
 
 
@@ -305,7 +347,7 @@ td {
 .eten-tabel td:nth-child(3) {
     font-family: aileron;
     font-weight: bold;
-    border: solid 1px #001C3D;
+    /* border: solid 1px #001C3D; */
     width: 17%;
 }
 
@@ -330,7 +372,8 @@ td {
 /* **************************************** DECUBITUS ******************************** */
 
 .decubitus-block {
-    background-color: rgba(255, 255, 255, .3);
+    /* background-color: rgba(0, 162, 219, 0.5); */
+    border: solid 2mm #F8884A;
     /* height: 100%; */
     width: 98.2%;
     overflow: auto;
@@ -398,6 +441,13 @@ td {
 
 /* **************************************** CONTINENTIE ******************************** */
 
+.continentie-info {
+    /* border: 2mm solid rgba(0, 162, 219, 0.6); */
+    border-radius: 1em / 1em;
+    padding: 0.5em;
+    margin: 1em 0em;
+}
+
 .continentie-tabel {
     width: 100%;
     height: 60%;
@@ -407,19 +457,46 @@ td {
     padding-right: 5%;
 }
 
+
+/* TABLE ROW */
 /* gekleurde rijen in tabel */
 .continentie-tabel tbody tr:nth-child(1) {
-    background-color: #E84E10;
+    /* background-color: #E84E10; */
 }
 
 .continentie-tabel tbody tr:nth-child(n+2):nth-child(-n+6) {
-    background-color: #F8884A;
+    /* background-color: #F8884A; */
 }
 
 .continentie-tabel tbody tr:nth-child(7) {
-    background-color: #00A2DB;
+    /* background-color: #00A2DB; */
 }
 
+
+
+/* TABLE DATA */
+/* gekleurde rijen in tabel */
+.continentie-tabel tbody tr:nth-child(1) td {
+    /* background-color: #E84E10; */
+    border: solid 2px #E84E10;
+    border-radius: .3em / .3em;
+
+}
+
+.continentie-tabel tbody tr:nth-child(n+2):nth-child(-n+6) td {
+    /* background-color: #F8884A; */
+    border: solid 2px #F8884A;
+    border-radius: .3em / .3em;
+
+
+}
+
+.continentie-tabel tbody tr:nth-child(7) td {
+    /* background-color: #00A2DB; */
+    border: solid 2px #00A2DB;
+    border-radius: .3em / .3em;
+
+}
 
 .continentie-tabel td:nth-child(1) {
     font-size: 1.8em;
@@ -441,11 +518,19 @@ td {
 
 /* **************************************** VRIJHEID ******************************** */
 
+.vrijheid-info {
+    /* border: 2mm solid rgba(0, 162, 219, 0.6); */
+    /* background-color: rgba(0, 162, 219, 0.5); */
+    border: solid 2mm #F8884A;
+    border-radius: 1em / 1em;
+    padding: 0.5em;
+}
+
 .vrijheid-tabel {
     min-width: 85%;
     border-radius: 1em;
     border-collapse: separate;
-    border-spacing: 1em 0.8em;
+    border-spacing: 1em 0.3em;
     text-align: center;
     margin: 0em 1em 0em 1em;
 }
