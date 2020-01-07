@@ -241,6 +241,10 @@ td {
     linear-gradient(45deg, #F8884A, #F8884A) 1 100%; */
 }
 
+.medicatie-info h1 {
+    color: rgba(232, 78, 0, 1);
+}
+
 .med-tabel {
     width: 90%;
     margin-left: 4mm;
@@ -311,8 +315,13 @@ td {
     border-radius: 1em / 1em;
     padding: 0.5em;
     /* border: 2mm solid rgba(0, 162, 219, 0.3); */
-    margin: 0.25em 0.25em 1em 0.25em;}
+    margin: 0.25em 0.25em 1em 0.25em;
+}
 
+.eten-info h1 {
+    /* color: rgba(232, 78, 0, 1); */
+    color: rgba(0, 162, 219);
+}
 
 .eten-tabel {
     width: 100%;
@@ -475,6 +484,10 @@ td {
     border-radius: 1em / 1em;
     padding: 0.5em;
     margin: 1em 0em;
+}
+
+.continentie-info h1 {
+    color: #F8884A;
 }
 
 .continentie-tabel {
