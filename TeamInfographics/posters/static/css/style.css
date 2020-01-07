@@ -16,8 +16,29 @@ html, body {
     /* background-color: rgba(199, 234, 255, 1); */
     color: #001C3D;
     border: dotted 1px black;
+
+    position: relative;
+
 }
 
+.background-logo {
+    background-image: url('../images/lpz_logo_final.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 14.5% 3%;
+    opacity:0.3;
+    height: 297mm;
+    width: 420mm;
+}
+
+.content {
+    height: 297mm;
+    width: 420mm;
+    position:absolute;
+    top: 0;
+    left:0;
+}
 
 /* **************************************** MAIN STRUCTURES AND GENERAL ELEMENTS *********************** */
 
@@ -71,6 +92,11 @@ td {
     min-height: 11%;
     height: 11%;
     width: 100%;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.col-1-title-box h1 {
     text-align: center;
 }
 
@@ -137,7 +163,7 @@ td {
     padding: 0.5em;
     float: left;
     /* border: 2mm solid rgba(0, 162, 219, 0.6); */
-    border: solid 2mm #F8884A;
+    border: solid 3mm #F8884A;
     /* background-color: rgba(0, 162, 219, 0.5); */
     margin: 0.5em 0.5em;
 }
@@ -220,6 +246,7 @@ td {
     margin-left: 4mm;
     border-collapse: separate;
     border-spacing: 1em 0.5em;
+
 }
 
 .med-tabel td:nth-child(3) {
@@ -264,10 +291,12 @@ td {
 } */
 
 .checkbox {
-    border: solid 1px #001C3D;
+    border: solid 2px #F8884A;
     width: 12mm;
     height: 12mm;
     text-align: center;
+    border-radius: .3em / .3em;
+
 }
 
 .checkbox-fill {
@@ -373,7 +402,7 @@ td {
 
 .decubitus-block {
     /* background-color: rgba(0, 162, 219, 0.5); */
-    border: solid 2mm #F8884A;
+    border: solid 3mm #F8884A;
     /* height: 100%; */
     width: 98.2%;
     overflow: auto;
@@ -521,7 +550,7 @@ td {
 .vrijheid-info {
     /* border: 2mm solid rgba(0, 162, 219, 0.6); */
     /* background-color: rgba(0, 162, 219, 0.5); */
-    border: solid 2mm #F8884A;
+    border: solid 3mm #F8884A;
     border-radius: 1em / 1em;
     padding: 0.5em;
 }
