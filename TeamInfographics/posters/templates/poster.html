@@ -34,7 +34,7 @@
 
                 <!-- <img class="logo" src="{% static "images\lpz_logo_final.png" %}" alt=""> -->
 
-                <h1>Leren en Verbeteren</h1>
+                <h2>Leren en Verbeteren</h2>
                 <h3 id="team-name" class="zero-margin">Team: Borkeld</h3>
                 <h3 class="zero-margin">Datum: 15-05-2019</h3>
                 <h3 class="zero-margin">Aantal cliënten: 8 (8 met behandeling)</h3>
@@ -45,8 +45,8 @@
                 <div class="row">
                     <!-- Beleidsafspraken -->
                     <div class="beleid-info">
-                        <h1>Beleidsafspraken</h1>
-                        <p class="zero-margin">Het percentage afspraken die zijn vastgelegd in zorgdossier cliënt was...</p>
+                        <h2>Beleidsafspraken</h2>
+                        <h3 class="zero-margin">Het percentage afspraken die zijn vastgelegd in zorgdossier cliënt was...</h3>
                         <table class="beleid-tabel">
                             <thead>
                                 <tr>
@@ -58,6 +58,13 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr>
+                                    <td class="img-blocks">&#10004;</td>
+                                    <td class="text-left">Ja, voorkeuren zijn besproken</td>
+                                    <td class="tableborder percentage-blocks">100%</td>
+                                    <td> </td>
+                                    <td class="tableborder percentage-blocks">100%</td>
+                                </tr>
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_reanimeren.PNG" %}" alt=""></td>
                                     <td class="text-left">Reanimeren</td>
@@ -99,19 +106,16 @@
 
                     <!-- Medicatieveiligheid -->
                     <div class="medicatie-info">
-                        <div class="column col-67">
-                            <h1>Medicatieveiligheid</h1>
-                            <p class="zero-margin">Zijn medicatiefouten in het team besproken?</p>
+                        <div class="column col-100">
+                            <h2>Medicatieveiligheid</h2>
+                            <h3 class="zero-margin">Zijn medicatiefouten multidisciplinair in het team besproken?</h3>
                             
                         </div>
 
-                        <div class="column col-33">
-                            
-                            <img class="pillen-img img-border" src="{% static "images\pillen.JPG" %}" alt="">
-                        </div>
+
 
                         <!-- TODO: Tabel symmetrisch maken -->
-                        <div class="column col-100">
+                        <div class="column col-67">
                             <p class="text-right zero-bottom-margin">Andere PG-teams</p>
                                 <table class="med-tabel">
                                     <thead>
@@ -124,23 +128,28 @@
                                     <tbody>
                                         <tr>
                                             <td class="checkbox checkbox-fill">&#10004;</td>
-                                            <td>Ja, multidisciplinair</td>
-                                            <td class="checkbox">4%</td>
+                                            <td>Ja</td>
+                                            <td class="checkbox">79%</td>
                                         </tr>
+
                                         <tr>
-                                        <td class="checkbox "></td>
-                                        <td>Ja, maar niet multidisciplinair</td>
-                                        <td class="checkbox">75%</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="checkbox "></td>
-                                        <td>Nee</td>
-                                        <td class="checkbox">21%</td>
-                                    </tr>
+                                            <td class="checkbox "></td>
+                                            <td>Nee</td>
+                                            <td class="checkbox">21%</td>
+                                        </tr>
                                     </tbody>
                                 </table>
-                                <p>Percentage cliënten waarbij een formele medicatiereview met zorgmedewerker heeft plaatsgevonden</p>
+                                
                         </div>
+
+                        <div class="column col-33">
+                            <img class="pillen-img img-border" src="{% static "images\pillen.JPG" %}" alt="">
+                        </div>
+
+                        <div class="column col-100">
+                            <h3>Percentage cliënten waarbij een formele medicatiereview met zorgmedewerker heeft plaatsgevonden</h3>
+                        </div>
+
                         <div class="column col-50 text-right">
                             <p class="zero-margin">Eigen team</p>
                             
@@ -176,8 +185,8 @@
             <div class="col-2-infobox">
 
                 <div class="eten-info">
-                    <h1>Aandacht voor eten en drinken</h1>
-                    <p class="zero-margin">Voedselvoorkeuren besproken en vastgelegd met de cliënt en/of familie</p>
+                    <h2>Aandacht voor eten en drinken</h2>
+                    <h3 class="zero-margin">Voedselvoorkeuren besproken en vastgelegd met de cliënt en/of familie</h3>
 
                     <table class="eten-tabel">
                         <thead>
@@ -216,11 +225,11 @@
                                 <td>Anders</td>
                                 <td>10%</td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td class=""></td>
                                 <td id="eten-nee-rij">Nee, geen voorkeuren besproken</td>
                                 <td>20%</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div> <!-- end eten-info -->
@@ -236,9 +245,8 @@
 
                     <div class="decubitus-info">
                         <div class="column col-67">
-                            <h1>Decubitus</h1>
-                            <p class="zero-margin">Het percentage cliënten met<br>
-                            decubitus cat. 2 en hoger was</p>
+                            <h2>Decubitus</h2>
+                            <h3 class="zero-margin">Het percentage cliënten met decubitus<br>cat. 2 en hoger was</h3>
                         </div>
                         <div class="column col-33">
                             <img class="decubitus-img img-border" src="{% static "images/liggend_mannetje.JPG" %}" alt="liggend_mannetje">
@@ -262,8 +270,8 @@
                     <!-- Decubitus: Casuïstiekbespreking-->
                     <div class="casus-info">
                         <div class="column col-100">
-                            <h1>Casuïstiekbespreking</h1>
-                            <p class="zero-margin">Heeft er binnen het team een casuïstiekbespreking (MDO) decubitus plaatsgevonden?</p>
+                            <h2>Casuïstiekbespreking</h2>
+                            <h3 class="zero-margin">Heeft er binnen het team een casuïstiekbespreking (MDO) decubitus plaatsgevonden?</h3>
                         </div>
                         <div class="column col-33 text-center">
                             
@@ -306,8 +314,8 @@
 
                 <!-- Middelen en maatregelen rond vrijheid-->
                 <div class="vrijheid-info">
-                    <h1>Middelen en maatregelen rond vrijheid</h1>
-                    <p class="zero-margin">Het percentage cliënten bij wie onderstaande typen middelen en maatregelen (M&M) zijn toegepast, was...</p>
+                    <h2>Middelen en maatregelen rond vrijheid</h2>
+                    <h3 class="zero-margin">Het percentage cliënten bij wie onderstaande typen middelen en maatregelen (M&M) zijn toegepast, was...</h3>
                     
                     <!-- vrijheid 1-->
                     <div class="row vrijheid-rij-1">
@@ -326,6 +334,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <td class="vrijheid-wolk" width="25%">50%</td>
+                                        <td width="50%">Ja, voorkeuren zijn besproken<br>
+                                        </td>
+                                        <td class="vrijheid-wolk">17%</td>
+                                    </tr>
                                     <tr>
                                         <td class="vrijheid-wolk" width="25%">50%</td>
                                         <td width="50%">Mechanisch<br>
@@ -387,8 +401,8 @@
 
                 <!-- Continentieplan -->
                 <div class="continentie-info">
-                    <h1>Continentieplan</h1>
-                    <p class="zero-margin">Is een plan voor zorg rondom de toiletgang aanwezig in het zorgdossier?</p>
+                    <h2>Continentieplan</h2>
+                    <h3 class="zero-margin">Is een plan voor zorg rondom de toiletgang aanwezig in het zorgdossier?</h3>
 
                     <table class="continentie-tabel">
                         <thead>
@@ -404,12 +418,12 @@
                             </tr>
                             <tr>
                                 <td class="checkbox"></td>
-                                <td>Voorkeuren & gewoontes t.a.v. toiletgang</td>
+                                <td>Voorkeuren & gewoontes</td>
                                 <td>70%</td>
                             </tr>
                             <tr>
                                 <td class="checkbox">&#10004;</td>
-                                <td>Manieren ondersteuning zoveel mogelijk zelfstandige toiletgang</td>
+                                <td>Ondersteuning zelfstandige toiletgang</td>
                                 <td>60%</td>
                             </tr>
                             <tr>
@@ -427,11 +441,11 @@
                                 <td>Anders</td>
                                 <td>10%</td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td class="checkbox"></td>
                                 <td id="continentie-nee-rij">Nee, geen afspraken vastgelegd</td>
                                 <td>20%</td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
 
