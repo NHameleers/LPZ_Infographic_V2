@@ -16,13 +16,18 @@ pdf_output = 'Teamposter_test.pdf'
 
 
 options = {
-'page-size': 'A4',
+'page-size': 'A3',
 'orientation': 'Landscape',
 'dpi': 400,
 'margin-top': '0in',
 'margin-right': '0in',
 'margin-bottom': '0in',
-'margin-left': '0in'}
+'margin-left': '0.15in',
+# 'disable-smart-shrinking': '',
+# 'print-media-type': '',
+'zoom': 1.15,
+'encoding': 'utf-8'
+}
 
 path_wkthmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
 config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)

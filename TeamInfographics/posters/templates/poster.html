@@ -4,7 +4,7 @@
 <head>
     {% load static %}
 
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
@@ -31,14 +31,23 @@
         <div class="column main-column">
 
             <div class="col-1-title-box">
+                <div class="column col-60">
 
-                <!-- <img class="logo" src="{% static "images\lpz_logo_final.png" %}" alt=""> -->
+                    <!-- <img class="logo" src="{% static "images\lpz_logo_final.png" %}" alt=""> -->
+    
+                    <h2>Leren en Verbeteren</h2>
+                    <h3 class="zero-margin">Organisatie: Naam organisatie</h3>
+                    <h3 id="team-name" class="zero-margin">Team: Borkeld</h3>
+                    <h3 class="zero-margin">Datum: 15-05-2019</h3>
+                    <h3 class="zero-margin">Aantal cliënten: 8 (8 met behandeling)</h3>
+                
+                </div>
 
-                <h2>Leren en Verbeteren</h2>
-                <h3 id="team-name" class="zero-margin">Team: Borkeld</h3>
-                <h3 class="zero-margin">Datum: 15-05-2019</h3>
-                <h3 class="zero-margin">Aantal cliënten: 8 (8 met behandeling)</h3>
+                <div class="column col-40">
+                    <img class="logo" src="{% static "images\lpz_logo_final.png" %}" alt="">
+                </div>
             </div>
+           
 
             <div class="col-1-infobox">
 
@@ -59,7 +68,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="img-blocks">&#10004;</td>
+                                    <!-- checkmark: https://www.codetable.net/decimal/10004 -->
+                                    <td class="img-blocks symbol-font"><img class="symbol-img" src="{% static "images\check-mark-icon.jpg" %}" alt=""></td>
                                     <td class="text-left">Ja, voorkeuren zijn besproken</td>
                                     <td class="percentage-blocks">100%</td>
                                     <td> </td>
@@ -127,7 +137,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="checkbox checkbox-fill">&#10004;</td>
+                                            <td class="checkbox checkbox-fill symbol-font"><img class="symbol-img-small" src="{% static "images\check-mark-icon.jpg" %}" alt=""></td>
                                             <td>Ja</td>
                                             <td class="checkbox">79%</td>
                                         </tr>
