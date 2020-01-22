@@ -17,6 +17,7 @@ pdf_output = 'Teamposter_test.pdf'
 
 options = {
 'page-size': 'A4',
+'orientation': 'Landscape',
 'dpi': 400,
 'margin-top': '0in',
 'margin-right': '0in',
