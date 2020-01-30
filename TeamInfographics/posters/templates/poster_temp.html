@@ -29,13 +29,14 @@ border: dotted 1px black;
 </head>
 <body>
     <h1>Hello {{ data.0.ward_name }}</h1>
+    <p>Full data: {{ data }}</p>
 
-    <p>Sliced data below</p>
-    {% for row in data|slice:"1" %}
-    <tr>
-      <td> {{row.0}} </td>
-      <td> {{row.1}} </td>
-    </tr>
-    {% endfor %}
+    <p>Ward code: {{ data.ward_code }}</p>
+    <p>Can I index this somehow? First column: {{ data.type_ward }}</p>
+
+    <p>D_QF_Prev_ACP_mean_team: {{ data.d_qf_rev_acp_mean_team }}</p>
+
+
+
 </body>
 </html>

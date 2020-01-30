@@ -1,4 +1,3 @@
-# Create your models here.
 # This is an auto-generated Django model module.
 # You'll have to do the following manually to clean this up:
 #   * Rearrange models' order
@@ -6,51 +5,92 @@
 #   * Make sure each ForeignKey has `on_delete` set to the desired behavior.
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
+
+# Generated with: python manage.py inspectdb LPZ2019Teams > posters/models.py
+# Also added primary_key=True to id variable and removed blank=True and null=True.
 from django.db import models
 
 
-class Lpz2019V1(models.Model):
+class Lpz2019Teams(models.Model):
     id = models.IntegerField(primary_key=True)
+    ward_code = models.TextField(db_column='Ward_code', blank=True, null=True)  # Field name made lowercase.
     measurementday = models.TextField(db_column='Measurementday', blank=True, null=True)  # Field name made lowercase.
-    ward_name = models.TextField(db_column='Ward_name', blank=True, null=True)  # Field name made lowercase.
-    ward_type = models.TextField(db_column='Ward_type', blank=True, null=True)  # Field name made lowercase.
-    d_num_clients_part = models.IntegerField(db_column='D_Num_clients_part', blank=True, null=True)  # Field name made lowercase.
-    d_num_clients_beh = models.IntegerField(db_column='D_Num_clients_beh', blank=True, null=True)  # Field name made lowercase.
+    institutionid = models.IntegerField(db_column='InstitutionID', blank=True, null=True)  # Field name made lowercase.
+    institutionform_type_inst = models.TextField(db_column='InstitutionForm_Type_Inst', blank=True, null=True)  # Field name made lowercase.
+    institutionform_mod_qualityframework = models.TextField(db_column='InstitutionForm_Mod_Qualityframework', blank=True, null=True)  # Field name made lowercase.
+    type_ward = models.TextField(db_column='Type_Ward', blank=True, null=True)  # Field name made lowercase.
+    d_age_mean_team = models.FloatField(db_column='D_Age_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_prev_acp_mean_team = models.FloatField(db_column='D_QF_Prev_ACP_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_acp_resusication_mean_team = models.TextField(db_column='D_QF_ACP_resusication_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_acp_life_ending_treat_mean_team = models.TextField(db_column='D_QF_ACP_life_ending_treat_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_acp_hosp_adm_mean_team = models.TextField(db_column='D_QF_ACP_hosp_adm_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_acp_other_mean_team = models.TextField(db_column='D_QF_ACP_other_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_prev_mr2_mean_team = models.TextField(db_column='D_QF_Prev_MR2_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_mean_team = models.FloatField(db_column='D_QF_Nut_foodpreferences_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_specific_mean_team = models.FloatField(db_column='D_QF_Nut_foodpreferences_specific_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_offering_mean_team = models.FloatField(db_column='D_QF_Nut_foodpreferences_offering_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_support_mean_team = models.FloatField(db_column='D_QF_Nut_foodpreferences_support_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_time_mean_team = models.FloatField(db_column='D_QF_Nut_foodpreferences_time_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_other_mean_team = models.FloatField(db_column='D_QF_Nut_foodpreferences_other_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_pu_prev_cat2_mean_team = models.FloatField(db_column='D_QF_PU_Prev_cat2_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_mean_team = models.FloatField(db_column='D_QF_Inc_toiletingplan_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_preferences_mean_team = models.FloatField(db_column='D_QF_Inc_toiletingplan_preferences_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_independent_mean_team = models.FloatField(db_column='D_QF_Inc_toiletingplan_independent_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_support_mean_team = models.FloatField(db_column='D_QF_Inc_toiletingplan_support_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_materials_mean_team = models.FloatField(db_column='D_QF_Inc_toiletingplan_materials_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_other_mean_team = models.FloatField(db_column='D_QF_Inc_toiletingplan_other_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_prev_mean_team = models.FloatField(db_column='D_QF_Rest_Prev_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_mechanical_mean_team = models.FloatField(db_column='D_QF_Rest_mechanical_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_physical_mean_team = models.FloatField(db_column='D_QF_Rest_physical_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_pharmacologic_mean_team = models.FloatField(db_column='D_QF_Rest_pharmacologic_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_psych_mean_team = models.FloatField(db_column='D_QF_Rest_psych_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_electronic_mean_team = models.FloatField(db_column='D_QF_Rest_electronic_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_supervision_mean_team = models.FloatField(db_column='D_QF_Rest_supervision_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_seclusion_mean_team = models.FloatField(db_column='D_QF_Rest_seclusion_mean_team', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_other_rest_mean_team = models.FloatField(db_column='D_QF_Rest_other_Rest_mean_team', blank=True, null=True)  # Field name made lowercase.
+    qf_ward_errorsdiscussed = models.TextField(db_column='QF_Ward_ErrorsDiscussed', blank=True, null=True)  # Field name made lowercase.
     qf_ward_pu_discussed = models.TextField(db_column='QF_Ward_PU_Discussed', blank=True, null=True)  # Field name made lowercase.
-    qf_ward_pu_discussed_afd = models.FloatField(db_column='QF_Ward_PU_Discussed_afd', blank=True, null=True)  # Field name made lowercase.
-    pu_prev = models.FloatField(db_column='PU_Prev', blank=True, null=True)  # Field name made lowercase.
-    pu_prev_ward = models.FloatField(db_column='PU_Prev_ward', blank=True, null=True)  # Field name made lowercase.
-    med_fouten = models.TextField(db_column='Med_fouten', blank=True, null=True)  # Field name made lowercase.
-    med_fouten_ward_nee = models.FloatField(db_column='Med_fouten_ward_nee', blank=True, null=True)  # Field name made lowercase.
-    med_fouten_ward_ja_nietmultid = models.FloatField(db_column='Med_fouten_ward_ja_nietmultid', blank=True, null=True)  # Field name made lowercase.
-    med_fouten_ward_ja = models.FloatField(db_column='Med_fouten_ward_ja', blank=True, null=True)  # Field name made lowercase.
-    med_review = models.TextField(db_column='Med_review', blank=True, null=True)  # Field name made lowercase.
-    med_review_ward = models.FloatField(db_column='Med_review_ward', blank=True, null=True)  # Field name made lowercase.
-    acp_reanimeren = models.FloatField(db_column='ACP_reanimeren', blank=True, null=True)  # Field name made lowercase.
-    acp_reanimeren_ward = models.FloatField(db_column='ACP_reanimeren_ward', blank=True, null=True)  # Field name made lowercase.
-    acp_lifeending = models.FloatField(db_column='ACP_lifeending', blank=True, null=True)  # Field name made lowercase.
-    acp_lifeending_ward = models.FloatField(db_column='ACP_lifeending_ward', blank=True, null=True)  # Field name made lowercase.
-    acp_ziekenhuis = models.FloatField(db_column='ACP_ziekenhuis', blank=True, null=True)  # Field name made lowercase.
-    acp_ziekenhuis_ward = models.FloatField(db_column='ACP_ziekenhuis_ward', blank=True, null=True)  # Field name made lowercase.
-    acp_anders = models.FloatField(db_column='ACP_anders', blank=True, null=True)  # Field name made lowercase.
-    acp_anders_ward = models.FloatField(db_column='ACP_anders_ward', blank=True, null=True)  # Field name made lowercase.
-    vbm_mechanisch = models.FloatField(db_column='VBM_Mechanisch', blank=True, null=True)  # Field name made lowercase.
-    vbm_mechanisch_ward = models.FloatField(db_column='VBM_Mechanisch_ward', blank=True, null=True)  # Field name made lowercase.
-    vbm_elektronisch = models.FloatField(db_column='VBM_elektronisch', blank=True, null=True)  # Field name made lowercase.
-    vbm_elektronisch_ward = models.FloatField(db_column='VBM_elektronisch_ward', blank=True, null=True)  # Field name made lowercase.
-    vbm_fysiek = models.FloatField(db_column='VBM_fysiek', blank=True, null=True)  # Field name made lowercase.
-    vbm_fysiek_ward = models.FloatField(db_column='VBM_fysiek_ward', blank=True, null=True)  # Field name made lowercase.
-    vbm_1op1toezicht = models.IntegerField(db_column='VBM_1op1toezicht', blank=True, null=True)  # Field name made lowercase.
-    vbm_1op1toezicht_ward = models.IntegerField(db_column='VBM_1op1toezicht_ward', blank=True, null=True)  # Field name made lowercase.
-    vbm_farmacologisch = models.FloatField(db_column='VBM_farmacologisch', blank=True, null=True)  # Field name made lowercase.
-    vbm_farmacologisch_ward = models.FloatField(db_column='VBM_farmacologisch_ward', blank=True, null=True)  # Field name made lowercase.
-    vbm_psychologisch = models.IntegerField(db_column='VBM_psychologisch', blank=True, null=True)  # Field name made lowercase.
-    vbm_psychologisch_ward = models.IntegerField(db_column='VBM_psychologisch_ward', blank=True, null=True)  # Field name made lowercase.
-    vbm_afzondering = models.IntegerField(db_column='VBM_afzondering', blank=True, null=True)  # Field name made lowercase.
-    vbm_afzondering_ward = models.IntegerField(db_column='VBM_afzondering_ward', blank=True, null=True)  # Field name made lowercase.
-    vbm_overig = models.FloatField(db_column='VBM_overig', blank=True, null=True)  # Field name made lowercase.
-    vbm_overig_ward = models.FloatField(db_column='VBM_overig_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_prev_acp_mean_type_ward = models.FloatField(db_column='D_QF_Prev_ACP_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_acp_resusication_mean_type_ward = models.FloatField(db_column='D_QF_ACP_resusication_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_acp_life_ending_treat_mean_type_ward = models.FloatField(db_column='D_QF_ACP_life_ending_treat_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_acp_hosp_adm_mean_type_ward = models.FloatField(db_column='D_QF_ACP_hosp_adm_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_acp_other_mean_type_ward = models.FloatField(db_column='D_QF_ACP_other_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_prev_mr2_mean_type_ward = models.TextField(db_column='D_QF_Prev_MR2_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_mean_type_ward = models.FloatField(db_column='D_QF_Nut_foodpreferences_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_specific_mean_type_ward = models.FloatField(db_column='D_QF_Nut_foodpreferences_specific_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_offering_mean_type_ward = models.FloatField(db_column='D_QF_Nut_foodpreferences_offering_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_support_mean_type_ward = models.FloatField(db_column='D_QF_Nut_foodpreferences_support_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_time_mean_type_ward = models.FloatField(db_column='D_QF_Nut_foodpreferences_time_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_nut_foodpreferences_other_mean_type_ward = models.FloatField(db_column='D_QF_Nut_foodpreferences_other_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_pu_prev_cat2_mean_type_ward = models.FloatField(db_column='D_QF_PU_Prev_cat2_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_mean_type_ward = models.FloatField(db_column='D_QF_Inc_toiletingplan_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_preferences_mean_type_ward = models.FloatField(db_column='D_QF_Inc_toiletingplan_preferences_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_independent_mean_type_ward = models.FloatField(db_column='D_QF_Inc_toiletingplan_independent_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_support_mean_type_ward = models.FloatField(db_column='D_QF_Inc_toiletingplan_support_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_materials_mean_type_ward = models.FloatField(db_column='D_QF_Inc_toiletingplan_materials_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_inc_toiletingplan_other_mean_type_ward = models.FloatField(db_column='D_QF_Inc_toiletingplan_other_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_prev_mean_type_ward = models.FloatField(db_column='D_QF_Rest_Prev_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_mechanical_mean_type_ward = models.FloatField(db_column='D_QF_Rest_mechanical_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_physical_mean_type_ward = models.FloatField(db_column='D_QF_Rest_physical_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_pharmacologic_mean_type_ward = models.FloatField(db_column='D_QF_Rest_pharmacologic_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_psych_mean_type_ward = models.FloatField(db_column='D_QF_Rest_psych_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_electronic_mean_type_ward = models.FloatField(db_column='D_QF_Rest_electronic_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_supervision_mean_type_ward = models.FloatField(db_column='D_QF_Rest_supervision_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_seclusion_mean_type_ward = models.FloatField(db_column='D_QF_Rest_seclusion_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    d_qf_rest_other_rest_mean_type_ward = models.FloatField(db_column='D_QF_Rest_other_Rest_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    aantal_patienten_per_ward_type = models.IntegerField(blank=True, null=True)
+    aantal_patienten_in_team = models.IntegerField(blank=True, null=True)
+    aantal_patienten_in_team_met_behandeling = models.IntegerField(blank=True, null=True)
+    qf_ward_errorsdiscussed_mean_type_ward = models.FloatField(db_column='QF_Ward_ErrorsDiscussed_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    qf_ward_pu_discussed_mean_type_ward = models.FloatField(db_column='QF_Ward_PU_Discussed_mean_type_ward', blank=True, null=True)  # Field name made lowercase.
+    missing_per_rij = models.IntegerField(blank=True, null=True)
+    mr_missing = models.IntegerField(db_column='MR_Missing', blank=True, null=True)  # Field name made lowercase.
+    acp_isnul = models.IntegerField(db_column='ACP_ISNUL', blank=True, null=True)  # Field name made lowercase.
+    errors_discussed_missing = models.IntegerField(db_column='Errors_Discussed_Missing', blank=True, null=True)  # Field name made lowercase.
+    pu_discussed_missing = models.IntegerField(db_column='PU_Discussed_Missing', blank=True, null=True)  # Field name made lowercase.
+    max_missing_allowed = models.IntegerField(db_column='MAX_MISSING_ALLOWED', blank=True, null=True)  # Field name made lowercase.
+    teveel_missing = models.TextField(blank=True, null=True)
 
     class Meta:
         managed = False
-        db_table = 'LPZ2019V1'
+        db_table = 'LPZ2019Teams'
