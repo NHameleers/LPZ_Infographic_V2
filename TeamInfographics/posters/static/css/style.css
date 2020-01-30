@@ -159,6 +159,10 @@ td {
     margin-bottom: 0;
 }
 
+.zero-top-margin {
+    margin-top: 0;
+}
+
 .img-border {
     border: solid 3px white;
 }
@@ -203,13 +207,13 @@ td {
 /* gekleurde rijen in tabel */
 .beleid-tabel tbody tr:nth-child(1) td:nth-child(3) {
     /* background-color: #E84E10; */
-    border: solid 2px rgba(0, 28, 61, 1);
+    border: solid 2px rgba(0, 28, 61, .5);
     border-radius: .3em / .3em;
 }
 
 .beleid-tabel tbody tr:nth-child(1) td:nth-child(5) {
     /* background-color: #E84E10; */
-    border: solid 2px rgba(0, 28, 61, 1);
+    border: solid 2px rgba(0, 28, 61, .5);
     border-radius: .3em / .3em;
 }
 
@@ -420,14 +424,13 @@ td {
 
 /* TABLE DATA */
 /* gekleurde rijen in tabel */
-.eten-tabel tbody tr:nth-child(1) td {
-    /* background-color: #E84E10; */
+/* .eten-tabel tbody tr:nth-child(1) td {
     border: solid 2px #E84E10;
     border-radius: .3em / .3em;
 
-}
+} */
 
-.eten-tabel tbody tr:nth-child(n+2):nth-child(-n+5) td {
+.eten-tabel tbody tr:nth-child(n+1):nth-child(-n+4) td {
     /* background-color: #F8884A; */
     border: solid 2px #F8884A;
     border-radius: .3em / .3em;
@@ -435,7 +438,7 @@ td {
 
 }
 
-.eten-tabel tbody tr:nth-child(6) td {
+.eten-tabel tbody tr:nth-child(5) td {
     /* background-color: #00A2DB; */
     border: solid 2px #00A2DB;
     border-radius: .3em / .3em;
@@ -592,14 +595,12 @@ td {
 
 /* TABLE DATA */
 /* gekleurde rijen in tabel */
-.continentie-tabel tbody tr:nth-child(1) td {
-    /* background-color: #E84E10; */
+/* .continentie-tabel tbody tr:nth-child(1) td {
     border: solid 2px #E84E10;
     border-radius: .3em / .3em;
+} */
 
-}
-
-.continentie-tabel tbody tr:nth-child(n+2):nth-child(-n+5) td {
+.continentie-tabel tbody tr:nth-child(n+1):nth-child(-n+4) td {
     /* background-color: #F8884A; */
     border: solid 2px #F8884A;
     border-radius: .3em / .3em;
@@ -607,7 +608,7 @@ td {
 
 }
 
-.continentie-tabel tbody tr:nth-child(6) td {
+.continentie-tabel tbody tr:nth-child(5) td {
     /* background-color: #00A2DB; */
     border: solid 2px #00A2DB;
     border-radius: .3em / .3em;
@@ -687,15 +688,14 @@ td {
 
 /* TABLE DATA */
 /* gekleurde rijen in tabel */
-.vrijheid-tabel tbody tr:nth-child(1) td {
-    /* background-color: #E84E10; */
+/* .vrijheid-tabel tbody tr:nth-child(1) td {
     border: solid 2px rgba(0, 28, 61, 1);
     border-radius: .3em / .3em;
-}
+} */
 
 
 
-.vrijheid-tabel tbody tr:nth-child(n+2):nth-child(-n+9) td {
+.vrijheid-tabel tbody tr:nth-child(n+1):nth-child(-n+9) td {
     /* background-color: #F8884A; */
     border: solid 2px rgba(0, 162, 219, 1);
     border-radius: .3em / .3em;
@@ -744,7 +744,7 @@ td {
 }
 
 .vrijheid-img-rij img {
-    width: 45%;
+    width: 65%;
     height: auto;
 }
 
