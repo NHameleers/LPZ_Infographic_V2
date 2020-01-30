@@ -9,17 +9,20 @@ import os
 
 orange_colors = ['#F8884A', '#F8B296']
 blue_colors = ['#00A2DB', '#ABD1FF']
+red_colors = ['#ff0000', '#F8884A']
+orange_colors_2 = ['#E84E10', '#F8884A']
 
 # bcolor = '#e2ffbc'
 
 def create_pie(val, team='team', size='small', topic='dec',
- fontsize=50, colors=['#00A2DB', '#ABD1FF'], bcolor='bcolor'):
+ fontsize=80, colors=['#00A2DB', '#ABD1FF'], bcolor='bcolor'):
     '''
     team = team or ward
     size = small or large
     topic = dec or med'''
 
-    prop = fm.FontProperties(fname='I:/LPZ/Infographic/fonts/aileron.heavy.otf')
+    # prop = fm.FontProperties(fname='F:/2020_01_06_Selectie_backup_I-schijf/LPZ/Infographic/fonts/aileron.heavy.otf')
+    prop = fm.FontProperties(fname='F:/2020_01_06_Selectie_backup_I-schijf/LPZ/Infographic_2.0/TeamInfographics/posters/static/fonts/Advent_Pro/AdventPro-SemiBold.ttf')
 
     pie_base = 100
     if topic == 'dec':
@@ -48,7 +51,7 @@ def create_pie(val, team='team', size='small', topic='dec',
 
 
 if __name__ == '__main__':
-    create_pie(7.5, team='team')
-    create_pie(5, team='ward')
-    create_pie(0, team='team', topic='med')
-    create_pie(100, team='ward', topic='med')
+    create_pie(7.5, team='team', colors=orange_colors_2)
+    create_pie(5, team='ward', colors=orange_colors_2)
+    create_pie(0, team='team', topic='med', colors=blue_colors)
+    create_pie(100, team='ward', topic='med', colors=blue_colors)

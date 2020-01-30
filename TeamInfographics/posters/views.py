@@ -1,15 +1,14 @@
 from django.shortcuts import render
-from posters.models import Lpz2019V1 
+from posters.models import Lpz2019Teams
 import pandas as pd
 
-df = pd.read_csv('I:/LPZ/Infographic/data/Data zorgaccent variabelen infographic_final.csv')
 
 
 # Create your views here.
 def index(request):
     """View function for home page of site."""
 
-    data = Lpz2019V1.objects.all()
+    data = Lpz2019Teams.objects.get(id=1)
 
     context = {
         'data': data,
