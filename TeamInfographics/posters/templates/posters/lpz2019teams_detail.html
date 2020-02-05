@@ -37,10 +37,11 @@
                     <!-- <img class="logo" src="{% static "images\lpz_logo_final.png" %}" alt=""> -->
     
                     
-                    <h3 class="zero-bottom-margin">Organisatie: Naam organisatie</h3>
-                    <h3 id="team-name" class="zero-margin">Team: Borkeld</h3>
-                    <h3 class="zero-margin">Datum: 15-05-2019</h3>
-                    <h3 class="zero-margin">Aantal cliënten: 8 (8 met behandeling)</h3>
+                    <h3 class="zero-bottom-margin">Organisatie: {{ lpz2019teams.institutionid }}</h3>
+                    <h3 id="team-name" class="zero-margin">Team: {{ lpz2019teams.ward_code }}</h3>
+                    <h3 class="zero-margin">Datum: {{ lpz2019teams.measurementday}}</h3>
+                    <h3 class="zero-margin">Aantal cliënten: {{ lpz2019teams.aantal_patienten_in_team }}
+                         ({{ lpz2019teams.aantal_patienten_in_team_met_behandeling }} met behandeling)</h3>
                 
                 </div>
 
@@ -72,30 +73,30 @@
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_reanimeren.PNG" %}" alt=""></td>
                                     <td class="text-left">Reanimeren</td>
-                                    <td class="percentage-blocks">100%</td>
+                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_resusication_mean_team|floatformat:0 }}%</td>
                                     <td> </td>
-                                    <td class="percentage-blocks">100%</td>
+                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_resusication_mean_type_ward|floatformat:0 }}%</td>
                                 </tr>
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_infuus.PNG" %}" alt=""></td>
                                     <td class="text-left">Levensverlengende<br>behandelingen</td>
-                                    <td class="percentage-blocks">100%</td>
+                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_life_ending_treat_mean_team|floatformat:0}}%</td>
                                     <td> </td>
-                                    <td class="percentage-blocks">69%</td>
+                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_life_ending_treat_mean_type_ward|floatformat:0 }}%</td>
                                 </tr>
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_ziekenhuis.PNG" %}" alt=""></td>
                                     <td class="text-left">Ziekenhuis-<br>opnamen</td>
-                                    <td class="percentage-blocks">100%</td>
+                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_hosp_adm_mean_team|floatformat:0 }}%</td>
                                     <td> </td>
-                                    <td class="percentage-blocks">52%</td>
+                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_hosp_adm_mean_type_ward|floatformat:0 }}%</td>
                                 </tr>
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_checklist.PNG" %}" alt=""></td>
                                     <td class="text-left">Anders</td>
-                                    <td class="percentage-blocks">0%</td>
+                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_other_mean_team|floatformat:0 }}%</td>
                                     <td> </td>
-                                    <td class="percentage-blocks">2%</td>
+                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_other_mean_type_ward|floatformat:0 }}%</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -131,15 +132,15 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="checkbox checkbox-fill symbol-font"><img class="symbol-img-small" src="{% static "images\check-mark-icon.jpg" %}" alt=""></td>
+                                            <td class="checkbox checkbox-fill symbol-font">TODO {{ lpz2019teams.qf_ward_errorsdiscussed|floatformat:0 }}<img class="symbol-img-small" src="{% static "images\check-mark-icon.jpg" %}" alt=""></td>
                                             <td>Ja</td>
-                                            <td class="checkbox">79%</td>
+                                            <td class="checkbox">{{ lpz2019teams.qf_ward_errorsdiscussed_mean_type_ward|floatformat:0 }}%</td>
                                         </tr>
 
                                         <tr>
-                                            <td class="checkbox "></td>
+                                            <td class="checkbox ">TODO</td>
                                             <td>Nee</td>
-                                            <td class="checkbox">21%</td>
+                                            <td class="checkbox">TODO%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -202,29 +203,29 @@
                         <tbody>
 
                             <tr>
-                                <td class="">80%</td>
+                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_specific_mean_team|floatformat:0 }}%</td>
                                 <td>Bepaald eten & drinken</td>
-                                <td>70%</td>
+                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_specific_mean_type_ward|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="">60%</td>
+                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_offering_mean_team|floatformat:0 }}%</td>
                                 <td>Hoeveelheid, frequentie, vorm</td>
-                                <td>60%</td>
+                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_offering_mean_type_ward|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="">70%</td>
+                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_support_mean_team|floatformat:0 }}%</td>
                                 <td>Gewenste hulp bij eten & drinken</td>
-                                <td>40%</td>
+                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_support_mean_type_ward|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="">20%</td>
+                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_time_mean_team|floatformat:0 }}%</td>
                                 <td>Tijd & plaats</td>
-                                <td>50%</td>
+                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_time_mean_type_ward|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="">10%</td>
+                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_other_mean_team|floatformat:0 }}%</td>
                                 <td>Anders</td>
-                                <td>10%</td>
+                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_other_mean_type_ward|floatformat:0 }}%</td>
                             </tr>
                             <!-- <tr>
                                 <td class=""></td>
@@ -283,9 +284,9 @@
                                 <svg width="80mm" height="40mm">
                                     <text x="11mm" y="5mm">Eigen team</text>
                                     <circle cx="41mm" cy="27mm" r="12mm" fill="#F8884A" stroke="#585A4C" stroke-width="1"></circle>
-                                    <text class="bubble-text" x="41mm" y="27mm" text-anchor="middle" dominant-baseline="middle">21%</text>
+                                    <text class="bubble-text" x="41mm" y="27mm" text-anchor="middle" dominant-baseline="middle">{{ lpz2019teams.qf_ward_pu_discussed_mean_type_ward|floatformat:0 }}%</text>
                                     <circle cx="20mm" cy="20mm" r="12mm" fill="#E84E10" stroke="black" stroke-width="1"></circle>
-                                    <text class="bubble-text" x="20mm" y="20mm" text-anchor="middle" dominant-baseline="middle">N.V.T.</text>
+                                    <text class="bubble-text" x="20mm" y="20mm" text-anchor="middle" dominant-baseline="middle">TODO {{ lpz2019teams.qf_ward_pu_discussed|floatformat:0 }}</text>
                                     <text x="55mm" y="15mm">% JA andere</text>
                                     <text x="55mm" y="20mm">PG-teams</text>
                                 </svg>
@@ -338,52 +339,52 @@
                                 <tbody>
 
                                     <tr>
-                                        <td class="" width="25%">50%</td>
+                                        <td class="" width="25%">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                         <td width="50%">Mechanisch<br>
                                             <span class="small-font">(bijv. bedhekken / tafelblad)</span>
                                         </td>
-                                        <td class="">17%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td width="25%" class="">75%</td>
+                                        <td width="25%" class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                         <td>Elektronisch<br>
                                             <span class="small-font">(bijv. alarm / camera / sensor)</span>
                                         </td>
-                                        <td class="">62%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">0%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                         <td>Fysiek<br>
                                             <span class="small-font">(iemand in bedwang houden)</span>
                                         </td>
-                                        <td class="">7%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">0%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                         <td>Eén op één toezicht</td>
-                                        <td class="">0%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td width="25%" class="">0%</td>
+                                        <td width="25%" class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                         <td width="50%">Farmacologisch</td>
-                                        <td width="25%" class="">13%</td>
+                                        <td width="25%" class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">0%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                         <td>Psychologisch<br>
                                             <span class="small-font">(bijv. dwingend spreken)</span>
                                         </td>
-                                        <td class="">0%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">0%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                         <td>Afzondering</td>
-                                        <td class="">0%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">12%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                         <td>Overig</td>
-                                        <td class="">6%</td>
+                                        <td class="">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -410,29 +411,29 @@
                         <tbody>
 
                             <tr>
-                                <td class="checkbox">70%</td>
+                                <td class="checkbox">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                 <td>Voorkeuren & gewoontes</td>
-                                <td>70%</td>
+                                <td>{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="checkbox">30%</td>
+                                <td class="checkbox">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                 <td>Ondersteuning zelfstandige toiletgang</td>
-                                <td>60%</td>
+                                <td>{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="checkbox">50%</td>
+                                <td class="checkbox">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                 <td>Benodigde hulp bij toiletgang</td>
-                                <td>40%</td>
+                                <td>{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="checkbox">40%</td>
+                                <td class="checkbox">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                 <td>Passend gebruik incontinentiematerialen</td>
-                                <td>50%</td>
+                                <td>{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="checkbox">12%</td>
+                                <td class="checkbox">{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                                 <td>Anders</td>
-                                <td>10%</td>
+                                <td>{{ lpz2019teams.xxx|floatformat:0 }}%</td>
                             </tr>
                             <!-- <tr>
                                 <td class="checkbox"></td>

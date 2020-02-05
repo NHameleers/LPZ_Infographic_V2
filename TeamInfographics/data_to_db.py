@@ -21,12 +21,13 @@ def create_connection(db_file):
 create_connection('db.sqlite3')
 
 
-df = pd.read_csv('F:/2020_01_06_Selectie_backup_I-schijf/LPZ/Infographic_2.0/Data/LPZ_teamdata.csv')
+df = pd.read_csv('../Data/LPZ_teamdata.csv')
 df.index.name = 'id'
+df.index = df.index + 1
 
 conn = sqlite3.connect('db.sqlite3')  # pass your db url
 
-df.to_sql(name='LPZ2019Teams', con=conn)
+df.to_sql(name='LPZ2019Teams', con=conn, if_exists='replace')
 
 
 # after this, set this database in the settings.py file

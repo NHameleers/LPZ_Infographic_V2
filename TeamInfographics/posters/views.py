@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from posters.models import Lpz2019Teams
+from django.views import generic
+
 import pandas as pd
 
 
@@ -17,3 +19,7 @@ def index(request):
 
     # Render the HTML template index.html
     return render(request, 'poster.html', context=context)
+
+
+class TeamDetailView(generic.DetailView):
+    model = Lpz2019Teams
