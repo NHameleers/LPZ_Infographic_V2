@@ -481,6 +481,26 @@ FREQUENCIES teveel_missing.
 
 
 
+* Formatting.
+* Nu zijn percentages weergegeven als proporties (schaal 0 tot 1). Maak dit schaal 0-100.
+
+DO REPEAT V = D_QF_Prev_ACP_mean_team TO D_QF_Rest_other_Rest_mean_team.
+COMPUTE V = V * 100.
+END REPEAT PRINT.
+
+
+
+DO REPEAT V = D_QF_Prev_ACP_mean_type_ward TO D_QF_Rest_other_Rest_mean_type_ward 
+    QF_Ward_ErrorsDiscussed_mean_type_ward
+    QF_Ward_PU_Discussed_mean_type_ward.
+COMPUTE V = V * 100.
+END REPEAT PRINT.
+
+FORMATS D_QF_Prev_ACP_mean_team TO QF_Ward_PU_Discussed_mean_type_ward (F4.0).
+
+EXECUTE.
+
+
 
 SAVE OUTFILE='Data\LPZ_teamdata.sav'
   /COMPRESSED.
