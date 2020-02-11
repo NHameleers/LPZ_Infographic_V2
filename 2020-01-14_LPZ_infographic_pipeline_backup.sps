@@ -1,10 +1,10 @@
 ﻿* Encoding: UTF-8.
 
-
+CD "F:\2020_01_06_Selectie_backup_I-schijf\LPZ\Infographic_2.0".
 
 * TODO: Als je de syntax wil runnen/gebruiken, dan bestandsnaam aanpassen.
 GET
-  FILE='D:\FHML_HSR\LPZ\NL2019NOV_total.sav'.
+  FILE='NL2019NOV_total.sav'.
 DATASET NAME LPZ WINDOW=FRONT.
 
 
@@ -206,6 +206,21 @@ FREQUENCIES Type_Ward.
 ****--> moet NIKS worden samengevoegd ****
 
 
+* Maak ook een variabele met de afkorting voor type_ward.
+COMPUTE afkorting_type_ward = type_ward.
+
+VALUE LABELS afkorting_type_ward
+901 "PG"
+902 "SOMH"
+903 "SOMV"
+904 "GR"
+905 "VZ"
+906 "MZ"
+907 "KS-PG"
+908 "KS-SOM"
+909 "EX"
+910 "EV"
+998 "AN".
 
 
 
@@ -466,11 +481,11 @@ FREQUENCIES teveel_missing.
 
 
 
-SAVE OUTFILE='D:\FHML_HSR\LPZ\LPZ_teamdata.sav'
+SAVE OUTFILE='Data\LPZ_teamdata.sav'
   /COMPRESSED.
 
 
-SAVE TRANSLATE OUTFILE='D:\FHML_HSR\LPZ\LPZ_teamdata.csv'
+SAVE TRANSLATE OUTFILE='Data\LPZ_teamdata.csv'
   /TYPE=CSV
   /ENCODING='UTF8'
   /MAP

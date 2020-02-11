@@ -6,8 +6,10 @@
 #   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 
+
 # Generated with: python manage.py inspectdb LPZ2019Teams > posters/models.py
 # Also added primary_key=True to id variable and removed blank=True and null=True.
+
 from django.db import models
 
 
@@ -19,6 +21,7 @@ class Lpz2019Teams(models.Model):
     institutionform_type_inst = models.TextField(db_column='InstitutionForm_Type_Inst', blank=True, null=True)  # Field name made lowercase.
     institutionform_mod_qualityframework = models.TextField(db_column='InstitutionForm_Mod_Qualityframework', blank=True, null=True)  # Field name made lowercase.
     type_ward = models.TextField(db_column='Type_Ward', blank=True, null=True)  # Field name made lowercase.
+    afkorting_type_ward = models.TextField(blank=True, null=True)
     d_age_mean_team = models.FloatField(db_column='D_Age_mean_team', blank=True, null=True)  # Field name made lowercase.
     d_qf_prev_acp_mean_team = models.FloatField(db_column='D_QF_Prev_ACP_mean_team', blank=True, null=True)  # Field name made lowercase.
     d_qf_acp_resusication_mean_team = models.TextField(db_column='D_QF_ACP_resusication_mean_team', blank=True, null=True)  # Field name made lowercase.

@@ -43,9 +43,7 @@ html, body {
 /* **************************************** MAIN STRUCTURES AND GENERAL ELEMENTS *********************** */
 
 
-.symbol-font {
-    font-family: "Arial Unicode MS";
-}
+
 
 .symbol-img {
     width: 40%;
@@ -369,9 +367,7 @@ td {
 
 }
 
-/* .checkbox-fill {
-    background-color: #E84E10;
-} */
+
 /* **************************************** ETEN EN DRINKEN ********************************  */
 
 .eten-info {
