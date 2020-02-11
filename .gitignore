@@ -7,3 +7,4 @@
 *.sav
 */*.sav
 Data/*
+Output/*
