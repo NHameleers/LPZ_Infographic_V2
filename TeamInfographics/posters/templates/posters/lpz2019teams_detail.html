@@ -38,8 +38,8 @@
                     <!-- <img class="logo" src="{% static "images\lpz_logo_final.png" %}" alt=""> -->
     
                     
-                    <h3 class="zero-bottom-margin">Organisatie: {{ lpz2019teams.institutionid }}</h3>
-                    <h3 id="team-name" class="zero-margin">Team: {{ lpz2019teams.ward_code }}</h3>
+                    <h3 class="zero-bottom-margin">Locatie: {{ lpz2019teams.locatie }}</h3>
+                    <h3 id="team-name" class="zero-margin">Team: {{ lpz2019teams.teamnaam }}</h3>
                     <h3 class="zero-margin">Datum: {{ lpz2019teams.measurementday}}</h3>
                     <h3 class="zero-margin">Aantal cliënten: {{ lpz2019teams.aantal_patienten_in_team }}
                          ({{ lpz2019teams.aantal_patienten_in_team_met_behandeling }} met behandeling)</h3>
@@ -301,9 +301,9 @@
                             <div class="column col-67">
                                 <svg width="80mm" height="40mm">
                                     <text x="11mm" y="5mm">Eigen team</text>
-                                    <circle cx="41mm" cy="27mm" r="12mm" fill="#F8884A" stroke="#585A4C" stroke-width="1"></circle>
+                                    <circle cx="41mm" cy="27mm" r="12mm" fill="#ABD1FF" stroke="#585A4C" stroke-width="1"></circle>
                                     <text class="bubble-text" x="41mm" y="27mm" text-anchor="middle" dominant-baseline="middle">{{ lpz2019teams.qf_ward_pu_discussed_mean_type_ward|floatformat:0 }}%</text>
-                                    <circle cx="20mm" cy="20mm" r="12mm" fill="#E84E10" stroke="black" stroke-width="1"></circle>
+                                    <circle cx="20mm" cy="20mm" r="12mm" fill="#00A2DB" stroke="black" stroke-width="1"></circle>
                                     <text class="bubble-text" x="20mm" y="20mm" text-anchor="middle" dominant-baseline="middle">
                                         {% if lpz2019teams.qf_ward_pu_discussed == '1' %}
                                             Ja

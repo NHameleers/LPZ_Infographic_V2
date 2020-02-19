@@ -94,6 +94,7 @@ D_QF_Rest_other_Rest.
 ADD FILES FILE *
  /KEEP=ID
     Measurementday
+    Coordinator
     InstitutionID
     IDresponsible
     CompletedDateTime
@@ -177,6 +178,24 @@ COMPUTE Ward_code_origineel = Ward_code.
 COMPUTE Ward_code = CONCAT(LTRIM(STRING(InstitutionID, 'F11')), '_', IDresponsible, '_', Ward_code).
 EXECUTE.
 
+* Is Coordinator_IDresponsible_Ward_code ook een unieke teamcode?.
+CTABLES
+  /VLABELS VARIABLES=Coordinator InstitutionID DISPLAY=LABEL
+  /TABLE Coordinator > InstitutionID [COUNT F40.0]
+  /CATEGORIES VARIABLES=Coordinator InstitutionID ORDER=A KEY=VALUE EMPTY=EXCLUDE
+  /CRITERIA CILEVEL=95.
+
+* Custom Tables.
+CTABLES
+  /VLABELS VARIABLES=InstitutionID Coordinator DISPLAY=LABEL
+  /TABLE InstitutionID [C] > Coordinator [C][COUNT F40.0]
+  /CATEGORIES VARIABLES=InstitutionID Coordinator ORDER=A KEY=VALUE EMPTY=EXCLUDE
+  /CRITERIA CILEVEL=95.
+
+* Zo te zien is er geen verschil, en is Coordinator gewoon een andere code voor InstitutionID en dus voor organisatie.
+
+
+
 * LTRIM(STRING(Type_Ward, 'F11'))
 
 
@@ -211,16 +230,16 @@ COMPUTE afkorting_type_ward = type_ward.
 
 VALUE LABELS afkorting_type_ward
 901 "PG"
-902 "SOMH"
-903 "SOMV"
-904 "GR"
+902 "Herstel"
+903 "Som"
+904 "GRZ"
 905 "VZ"
-906 "MZ"
-907 "KS-PG"
-908 "KS-SOM"
-909 "EX"
-910 "EV"
-998 "AN".
+906 "Meerz"
+907 "PG/kl"
+908 "Som/kl"
+909 "Extra"
+910 "ELV"
+998 "overig".
 
 EXECUTE.
 
@@ -293,6 +312,10 @@ CTABLES
     D_QF_Inc_toiletingplan_preferences_mean_type_ward [S][MEAN]
   /CATEGORIES VARIABLES=Type_Ward Ward_code ORDER=A KEY=VALUE EMPTY=EXCLUDE
   /CRITERIA CILEVEL=95.
+
+
+
+
 
 
 

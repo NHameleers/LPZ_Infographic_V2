@@ -1,0 +1,583 @@
+﻿Coordinator;IDresponsible;WardCodeOriginal;Organisatie;Locatie;Teamnaam
+888467;111;102;Stichting Envida;Verpleegkliniek Larisa;etage 1
+888467;111;103;Stichting Envida;Verpleegkliniek Larisa;etage 2
+888467;111;112;Stichting Envida;Verpleegkliniek Larisa;Somatiek
+888467;230;243;Stichting Envida;Verpleeghuis Grubbeveld;UNIT A
+888467;230;244;Stichting Envida;Verpleeghuis Grubbeveld;UNIT B
+888467;230;245;Stichting Envida;Verpleeghuis Grubbeveld;UNIT D
+888467;230;246;Stichting Envida;Verpleeghuis Grubbeveld;UNIT E
+888467;490;362;Stichting Envida;De Zeven Bronnen;Afdeling 1-2 PG
+888467;490;361;Stichting Envida;De Zeven Bronnen;Afdeling 5-6 PG
+888467;490;363;Stichting Envida;De Zeven Bronnen;Afdeling 3-4 Som
+888467;490;364;Stichting Envida;De Zeven Bronnen;Afdeling 7G 7H
+888467;493;236;Stichting Envida;Zorgcentrum Koepelhof;Koepelhof 3
+888467;493;237;Stichting Envida;Zorgcentrum Koepelhof;Koepelhof 4
+888467;493;238;Stichting Envida;Zorgcentrum Koepelhof;Koepelhof(afd 5)
+888467;494;110 PG;Stichting Envida;Zorgcentrum Lenculenhof;PG-groep
+888467;494;110;Stichting Envida;Zorgcentrum Lenculenhof;0-1
+888467;494;111;Stichting Envida;Zorgcentrum Lenculenhof;2-3-4
+888467;506;248;Stichting Envida;Verpleegunit de Bron;De Bron somatiek
+888467;506;249;Stichting Envida;Verpleegunit de Bron;Mottenburght PG
+888467;507;376;Stichting Envida;Verpleegunit Beukeloord;Beukeloord PG
+888467;507;380;Stichting Envida;Verpleegunit Beukeloord;Beukeloord Somatiek
+888467;804;365;Stichting Envida;Verpleegunit Appelgaard;Bloesem
+888467;804;368;Stichting Envida;Verpleegunit Appelgaard;De Lommer
+888467;804;367;Stichting Envida;Verpleegunit Appelgaard;Maretak
+888467;804;369;Stichting Envida;Verpleegunit Appelgaard;De Twijg
+888467;848;230;Stichting Envida;Locatie La Valence;Den Hoaf
+888467;848;231;Stichting Envida;Locatie La Valence;Het Brook pg
+888467;848;233;Stichting Envida;Locatie La Valence;Vogelzang
+888467;1198;239;Stichting Envida;Verpleegunit Croonenhoff;VZH Croonenhoff
+888467;1198;240;Stichting Envida;Verpleegunit Croonenhoff;Het Patronaat  en het Vloot
+888467;1198;241;Stichting Envida;Verpleegunit Croonenhoff;Den Duuker
+888467;1198;242;Stichting Envida;Verpleegunit Croonenhoff;Drie Leliën
+888467;1445;105;Stichting Envida;VP De Mins;De Mins
+888467;1446;377;Stichting Envida;VP Gulpen;VPH Gulpen Som
+888467;1446;379;Stichting Envida;VP Gulpen;VPH Gulpen PG
+888467;1449;370;Stichting Envida;Verpleegunit Hagerpoort;VZH
+888467;1449;371;Stichting Envida;Verpleegunit Hagerpoort;Hagerpoort VPU
+888467;1774;372;Stichting Envida;Verpleegunit Wilgenhof;Wilgenhof
+888467;1774;379;Stichting Envida;Verpleegunit Wilgenhof;De Wilg
+888467;2222;501;Stichting Envida;Envida transfer;AZM-Herstel
+888467;2222;502;Stichting Envida;Envida transfer;Beijart Herstelzorg
+889193;663;G01;Surplus;De Ganshoek;Ganshoek
+889193;768;A01;Surplus;Antonius Abt;Team zorgappartementen AA
+889193;768;A03;Surplus;Antonius Abt;Team Kleine Schans AA
+889193;768;A02;Surplus;Antonius Abt;Team de Haven AA
+889193;769;Smt01;Surplus;St. Martinus;STMartinus
+889193;770;MH01;Surplus;Mauritshof;Mauritshof
+889193;771;F02;Surplus;Fendertshof;FH Kompas
+889193;771;F01;Surplus;Fendertshof;FH zorgappartement Hofjes
+889193;786;B01;Surplus;WZC De Breedonk;afdeling 1
+889193;786;B02;Surplus;WZC De Breedonk;afdeling 2
+889193;786;B03;Surplus;WZC De Breedonk;afdeling 3
+889193;807;WW01;Surplus;Locatie Westerwiek;Duinzicht
+889193;807;WW03;Surplus;Locatie Westerwiek;Regenboog
+889193;807;WW02;Surplus;Locatie Westerwiek;Zonlicht
+889193;1021;E01;Surplus;Locatie Elisabeth Centrum;Tolbrugstate
+889193;1021;E03;Surplus;Locatie Elisabeth Centrum;Haagstate
+889193;1021;E09;Surplus;Locatie Elisabeth Centrum;Corenschup
+889193;1021;E02;Surplus;Locatie Elisabeth Centrum;Wintmolen
+889193;1021;E08;Surplus;Locatie Elisabeth Centrum;De Raep
+889193;1021;E07;Surplus;Locatie Elisabeth Centrum;Claverbladt
+889193;1021;E06;Surplus;Locatie Elisabeth Centrum;Truweel
+889193;1021;E05;Surplus;Locatie Elisabeth Centrum;Grutmolen
+889193;1021;E04;Surplus;Locatie Elisabeth Centrum;Saageman
+889193;1023;Vu02;Surplus;Locatie Vuchterhage;afdeling 1
+889193;1023;Vu03;Surplus;Locatie Vuchterhage;afdeling 2
+889193;1023;Vu01;Surplus;Locatie Vuchterhage;afdeling 0
+889193;1025;DD01;Surplus;Locatie De Donk;De Donk PG
+889193;1025;DD02;Surplus;Locatie De Donk;De Donk Somatiek 1
+889193;1025;DD03;Surplus;Locatie De Donk;De Donk Somatiek 2
+889193;1775;Z01;Surplus;de Zeven Schakels;Schakel 1
+889193;1775;Z02;Surplus;de Zeven Schakels;Schakel 5 (125-345 en 421-645)
+889193;1775;Z03;Surplus;de Zeven Schakels;Schakel 6 begane grond
+889193;1775;Z04;Surplus;de Zeven Schakels;Schakel 6 eerste verdieping
+889193;2217;Mo01;Surplus;Molenstaete;Watermolen
+889193;2217;Mo02;Surplus;Molenstaete;Papiermolen
+889193;2217;Mo03;Surplus;Molenstaete;Korenmolen
+889688;2139;105;Atlant Wonen Zorg welzijn;Markenhof;West
+889688;2139;110;Atlant Wonen Zorg welzijn;Markenhof;Noord
+889688;2139;112;Atlant Wonen Zorg welzijn;Markenhof;Oost
+889688;2139;114;Atlant Wonen Zorg welzijn;Markenhof;Zuid
+889688;2139;116;Atlant Wonen Zorg welzijn;Markenhof;Buiten
+889688;2140;420;Atlant Wonen Zorg welzijn;Markenhaven;Passage
+889688;2140;425;Atlant Wonen Zorg welzijn;Markenhaven;De Waag
+889688;2140;430;Atlant Wonen Zorg welzijn;Markenhaven;Oostpoort
+889688;2140;431;Atlant Wonen Zorg welzijn;Markenhaven;Hofplein
+889688;2140;432;Atlant Wonen Zorg welzijn;Markenhaven;Delfshaven
+889688;2141;415;Atlant Wonen Zorg welzijn;Immendaal;Coolsingel
+889688;2142;510;Atlant Wonen Zorg welzijn;Heemhof;Crocus
+889688;2142;515;Atlant Wonen Zorg welzijn;Heemhof;Dahlia
+889688;2142;520;Atlant Wonen Zorg welzijn;Heemhof;Everest
+889688;2142;525;Atlant Wonen Zorg welzijn;Heemhof;Aster
+889688;2142;590;Atlant Wonen Zorg welzijn;Heemhof;Extramuraal
+889688;2143;905;Atlant Wonen Zorg welzijn;Berkenhove;De Berken
+889688;2143;907;Atlant Wonen Zorg welzijn;Berkenhove;De Hove
+889688;2143;915;Atlant Wonen Zorg welzijn;Berkenhove;KSW
+889688;2143;990;Atlant Wonen Zorg welzijn;Berkenhove;Extramuraal
+889688;2144;205;Atlant Wonen Zorg welzijn;De Loohof;WZC 1e verdieping
+889688;2144;206;Atlant Wonen Zorg welzijn;De Loohof;Koetshuis PG
+889688;2144;207;Atlant Wonen Zorg welzijn;De Loohof;Somatiek 2e verdieping
+889688;2144;208;Atlant Wonen Zorg welzijn;De Loohof;WZC 3e verdieping
+889688;2144;290;Atlant Wonen Zorg welzijn;De Loohof;Extramuraal
+889688;2145;305-1;Atlant Wonen Zorg welzijn;Sprengenhof;De Piek
+889688;2145;305-2;Atlant Wonen Zorg welzijn;Sprengenhof;De Goudvink
+889688;2145;306-1;Atlant Wonen Zorg welzijn;Sprengenhof;De Bron
+889688;2145;306-2;Atlant Wonen Zorg welzijn;Sprengenhof;De Beek
+889688;2145;390;Atlant Wonen Zorg welzijn;Sprengenhof;Extramuraal
+889688;2146;710;Atlant Wonen Zorg welzijn;Koningin Wilhelmina;KSW 1
+889688;2146;711;Atlant Wonen Zorg welzijn;Koningin Wilhelmina;KSW 2
+889688;2146;715;Atlant Wonen Zorg welzijn;Koningin Wilhelmina;Tweede etage
+889688;2146;716;Atlant Wonen Zorg welzijn;Koningin Wilhelmina;Derde etage
+889688;2146;790;Atlant Wonen Zorg welzijn;Koningin Wilhelmina;Extramuraal
+889688;2147;805;Atlant Wonen Zorg welzijn;Berghorst;Berghorst 1
+889688;2147;807;Atlant Wonen Zorg welzijn;Berghorst;Berghorst 2
+889688;2147;890;Atlant Wonen Zorg welzijn;Berghorst;Extramuraal
+888782;517;32;Zorgcentrum de Wijngaerd;verpleeg/verzorgingshuis de Wijngaerd;Haasdijk
+888782;517;11;Zorgcentrum de Wijngaerd;verpleeg/verzorgingshuis de Wijngaerd;Boveneindje
+888782;517;12;Zorgcentrum de Wijngaerd;verpleeg/verzorgingshuis de Wijngaerd;Boerenhoek
+888782;517;33;Zorgcentrum de Wijngaerd;verpleeg/verzorgingshuis de Wijngaerd;Plukmade
+888782;517;31;Zorgcentrum de Wijngaerd;verpleeg/verzorgingshuis de Wijngaerd;de Duin
+888782;517;21;Zorgcentrum de Wijngaerd;verpleeg/verzorgingshuis de Wijngaerd;de Schans
+888782;517;22;Zorgcentrum de Wijngaerd;verpleeg/verzorgingshuis de Wijngaerd;Stuivezand
+889042;539;01;Het Spectrum;De Sterrenlanden;PG 1
+889042;539;02;Het Spectrum;De Sterrenlanden;PG 2
+889042;539;03;Het Spectrum;De Sterrenlanden;PG 3
+889042;539;06;Het Spectrum;De Sterrenlanden;somatiek 1e etage
+889042;539;05;Het Spectrum;De Sterrenlanden;Somatiek bg + zorgwoningen
+889042;539;07;Het Spectrum;De Sterrenlanden;KSW
+889042;540;01;Het Spectrum;Vreedonk;lichte zorg
+889042;540;02;Het Spectrum;Vreedonk;somatiek
+889042;540;03;Het Spectrum;Vreedonk;PG Bomkade/kuipershaven
+889042;540;04;Het Spectrum;Vreedonk;PG Hooikade/Nieuwe haven
+889042;540;05;Het Spectrum;Vreedonk;PG team 3
+889689;2168;DMS_DN;Argos Zorggroep;DrieMaasStede;De Noord
+889689;2168;DMS_DDK;Argos Zorggroep;DrieMaasStede;De DrieKoornBloemen
+889689;2168;DMS_DNP;Argos Zorggroep;DrieMaasStede;De Nieuwe Palmboom
+889689;2168;DMS_DW;Argos Zorggroep;DrieMaasStede;De Walvisch
+889689;2168;DMS_DK;Argos Zorggroep;DrieMaasStede;De Kameel
+889689;2169;MRO_TFR_;Argos Zorggroep;Marnix;MRO TRF
+889689;2169;MRO_TFR_;Argos Zorggroep;Marnix;MRO TRF
+889689;2169;MRO_GR2;Argos Zorggroep;Marnix;Geriatrische Revalidatie 2
+889689;2169;MRO_PGR;Argos Zorggroep;Marnix;Psycho Geriatrische Revalidatie
+889689;2169;MRO_CPH;Argos Zorggroep;Marnix;Centrum voor Preventie en Herstel
+889689;2170;SND_DK;Argos Zorggroep;Soenda;Kuiperij
+889689;2170;SND_DB;Argos Zorggroep;Soenda;Boeterij
+889689;2170;SND_DT;Argos Zorggroep;Soenda;Taanderij
+889689;2170;SND_DV;Argos Zorggroep;Soenda;Visserij
+889689;2171;MPL_AK2;Argos Zorggroep;De Meerpaal;2171
+889689;2171;MPL_ST;Argos Zorggroep;De Meerpaal;2171
+889689;2171;MPL_AK1;Argos Zorggroep;De Meerpaal;2171
+889689;2171;MPL_DV1;Argos Zorggroep;De Meerpaal;2171
+889689;2171;MPL_DV2;Argos Zorggroep;De Meerpaal;2171
+889689;2172;DMH_SP;Argos Zorggroep;DrieMaasHave;Stationsplein
+889689;2172;DMH_MP;Argos Zorggroep;DrieMaasHave;Marktplein
+889689;2172;DMH_KP;Argos Zorggroep;DrieMaasHave;Koningsplein
+889689;2172;DMH_HP;Argos Zorggroep;DrieMaasHave;Havenplein
+889689;2172;DMH_MK;Argos Zorggroep;DrieMaasHave;Molenkwartier
+889689;2173;TWM_EV;Argos Zorggroep;De TweeMaster;De Ever
+889689;2173;TWM_SN;Argos Zorggroep;De TweeMaster;De Schoener
+889689;2173;TWM_LG;Argos Zorggroep;De TweeMaster;de Logger
+889689;2173;TWM_KP;Argos Zorggroep;De TweeMaster;de Klipper
+889689;2174;bvl_ki_;Argos Zorggroep;Breede Vliet;kievit
+889689;2174;bvl_eh_;Argos Zorggroep;Breede Vliet;eekhoorn
+889689;2174;bvl_kb_;Argos Zorggroep;Breede Vliet;korenbloem
+889689;2174;bvl_kr_;Argos Zorggroep;Breede Vliet;klaproos
+889689;2174;bvl_vl;Argos Zorggroep;Breede Vliet;Viool
+889689;2175;mwh_ds_;Argos Zorggroep;Meeuwenhof;Dorpstraat
+889689;2175;mwh_ga_;Argos Zorggroep;Meeuwenhof;Gaarde
+889689;2175;mwh_ow_;Argos Zorggroep;Meeuwenhof;Oude Wal
+889689;2175;mwh_th_;Argos Zorggroep;Meeuwenhof;Tramhuis
+889689;2175;mwh_vw_;Argos Zorggroep;Meeuwenhof;Voorweg
+889689;2175;mwh_jdr_;Argos Zorggroep;Meeuwenhof;Jan de Raadtkade
+889689;2175;mwh_SK2;Argos Zorggroep;Meeuwenhof;Schakel 2
+889689;2176;DES_AM;Argos Zorggroep;De Es;Anemoon
+889689;2176;DES_CM;Argos Zorggroep;De Es;Clematis
+889689;2176;DES_GR1;Argos Zorggroep;De Es;Gouderegen 1
+889689;2176;DES_GR2;Argos Zorggroep;De Es;Goudenregen 2
+889689;2176;DES_OD1;Argos Zorggroep;De Es;Orchidee 1
+889689;2176;DES_OD2;Argos Zorggroep;De Es;Orchidee 2
+889689;2177;KLW_KH;Argos Zorggroep;Klepperwei;Koetshuis
+889689;2177;KLW_ZK;Argos Zorggroep;Klepperwei;Zadelkamer
+889689;2178;HGW_ZCZ;Argos Zorggroep;Hooge-Werf;Zorgcentrumzorg
+889689;2178;HGW_WIS;Argos Zorggroep;Hooge-Werf;Wittestee
+889689;2178;HGW_WAS;Argos Zorggroep;Hooge-Werf;Waalstee
+889452;55;029;De Riethorst Stromenland;Woonzorgcentrum Mauritsstaete;Team 1
+889452;55;030;De Riethorst Stromenland;Woonzorgcentrum Mauritsstaete;Team 2
+889452;55;031;De Riethorst Stromenland;Woonzorgcentrum Mauritsstaete;Team 3
+889452;56;051;De Riethorst Stromenland;Verpleeghuis De Riethorst;Nonnetje
+889452;56;052;De Riethorst Stromenland;Verpleeghuis De Riethorst;Rietgans
+889452;56;053;De Riethorst Stromenland;Verpleeghuis De Riethorst;Harlekijn
+889452;56;054;De Riethorst Stromenland;Verpleeghuis De Riethorst;Brilduiker 1
+889452;56;055;De Riethorst Stromenland;Verpleeghuis De Riethorst;Brilduiker 2
+889452;57;046;De Riethorst Stromenland;Woonzorgcentrum de Stroming;Team de Akker
+889452;57;047;De Riethorst Stromenland;Woonzorgcentrum de Stroming;Team de Vliet
+889452;57;048;De Riethorst Stromenland;Woonzorgcentrum de Stroming;Team 1
+889452;57;049;De Riethorst Stromenland;Woonzorgcentrum de Stroming;Team 2
+889452;57;050;De Riethorst Stromenland;Woonzorgcentrum de Stroming;Team 3
+889452;81;003;De Riethorst Stromenland;Verpleeghuis Altenahove;Akkerwinde Team 1 Almzicht
+889452;81;004;De Riethorst Stromenland;Verpleeghuis Altenahove;Akkerwinde Team 2 Polderzicht
+889452;81;005;De Riethorst Stromenland;Verpleeghuis Altenahove;Akkerwinde Team 3 Tuinzicht
+889452;81;006;De Riethorst Stromenland;Verpleeghuis Altenahove;Guldenroede Team 1 WLZ
+889452;81;007;De Riethorst Stromenland;Verpleeghuis Altenahove;Guldenroede Team 2 GRZ
+889452;81;008;De Riethorst Stromenland;Verpleeghuis Altenahove;Morgenster Team 1 Roos
+889452;81;009;De Riethorst Stromenland;Verpleeghuis Altenahove;Morgenster Team 2 Tulp
+889452;81;010;De Riethorst Stromenland;Verpleeghuis Altenahove;Morgenster Team 3 lelie
+889452;81;011;De Riethorst Stromenland;Verpleeghuis Altenahove;Wilgenroos Team 1
+889452;81;012;De Riethorst Stromenland;Verpleeghuis Altenahove;Wilgenroos Team 2
+889452;82;027;De Riethorst Stromenland;Zorgcentrum De Lemmenskamp;Team Maas en Waal
+889452;82;028;De Riethorst Stromenland;Zorgcentrum De Lemmenskamp;Team Merwede
+889452;83;013;De Riethorst Stromenland;Zorgcentrum Antonia;Team PG
+889452;83;014;De Riethorst Stromenland;Zorgcentrum Antonia;Team Somatiek
+889452;83;015;De Riethorst Stromenland;Zorgcentrum Antonia;Team Wonen met zorg
+889452;84;017;De Riethorst Stromenland;Zorgcentrum Goezate;Team de Kajuit
+889452;84;018;De Riethorst Stromenland;Zorgcentrum Goezate;Team de Roef
+889452;84;019;De Riethorst Stromenland;Zorgcentrum Goezate;Team het Anker
+889452;84;020;De Riethorst Stromenland;Zorgcentrum Goezate;Team het Ruim
+889452;84;021;De Riethorst Stromenland;Zorgcentrum Goezate;Team de Stuurhut
+889452;1196;022;De Riethorst Stromenland;De Kloosterhoeve;Team 1
+889452;1196;023;De Riethorst Stromenland;De Kloosterhoeve;Team 2
+889452;1196;024 ;De Riethorst Stromenland;De Kloosterhoeve;Team 3
+889452;1196;025;De Riethorst Stromenland;De Kloosterhoeve;Team 4
+889452;1196;026;De Riethorst Stromenland;De Kloosterhoeve;Team 5
+889452;1358;001;De Riethorst Stromenland;Aernswaert;Team 1 
+889452;1358;002;De Riethorst Stromenland;Aernswaert;Team 2
+889452;1359;016;De Riethorst Stromenland;De Dotter;De Dotter
+889452;1895;040;De Riethorst Stromenland;Verpleeghuis Slotjesveste;GRZ Team 1
+889452;1895;041;De Riethorst Stromenland;Verpleeghuis Slotjesveste;GRZ Team 2
+889452;1895;042;De Riethorst Stromenland;Verpleeghuis Slotjesveste;GRZ Team 3
+889452;1895;043;De Riethorst Stromenland;Verpleeghuis Slotjesveste;WLZ Team 4
+889452;1895;044;De Riethorst Stromenland;Verpleeghuis Slotjesveste;WLZ Team 5
+889452;1895;045;De Riethorst Stromenland;Verpleeghuis Slotjesveste;WLZ Team 6
+888209;384;08;Stichting Land van Horne;St. Martinus - Weert;Huntington KSW
+888209;384;01;Stichting Land van Horne;St. Martinus - Weert;Long Stay
+888209;385;52;Stichting Land van Horne;Marishof - Maarheze;Afdeling somatiek
+888209;385;51;Stichting Land van Horne;Marishof - Maarheze;Afdeling PG
+888209;386;14;Stichting Land van Horne;Mariënburght - Budel;Somatiek
+888209;386;15;Stichting Land van Horne;Mariënburght - Budel;Afdeling PG
+888209;386;13;Stichting Land van Horne;Mariënburght - Budel;KSW PG
+888209;387;72;Stichting Land van Horne;Rust in Roy - Stramproy;Afdeling PG
+888209;387;71;Stichting Land van Horne;Rust in Roy - Stramproy;Somatiek
+888209;388;91;Stichting Land van Horne;St. Joseph - Nederweert;KSW PG a, b, c, d
+888209;388;94;Stichting Land van Horne;St. Joseph - Nederweert;KSW PG e, f, g, h, i
+888209;388;92;Stichting Land van Horne;St. Joseph - Nederweert;KSW somatiek
+888209;389;61;Stichting Land van Horne; Hieronymus - Weert;Somatiek
+888209;567;84;Stichting Land van Horne;Ververshof - Weert;PG 3 en 4
+888209;567;83;Stichting Land van Horne;Ververshof - Weert;PG 1 en 2
+888209;715;41;Stichting Land van Horne;St. Elisabeth - Haelen;Somatiek
+888209;2180;121;Stichting Land van Horne;Eegelshoeve - Someren;KSW PG
+888209;2181;31;Stichting Land van Horne;Hornehoof - Weert;KSW PG 1,2,3
+888209;2181;32;Stichting Land van Horne;Hornehoof - Weert;KSW PG 4,5
+888209;2181;33;Stichting Land van Horne;Hornehoof - Weert;somatiek
+888209;2182;22;Stichting Land van Horne;Hushoven - Weert;KSW PG
+888209;2182;21;Stichting Land van Horne;Hushoven - Weert;somatiek
+888209;2183;101;Stichting Land van Horne;Nedermazehof - Weert;KSW PG
+888209;2184;111;Stichting Land van Horne;Zuyderborgh - Weert;KSW PG
+888177;248;04;Parnassia BV;Verpleeghuis Dorestad;Luzerne
+888177;248;03;Parnassia BV;Verpleeghuis Dorestad;Icarus
+888177;248;01;Parnassia BV;Verpleeghuis Dorestad;Atalanta
+889008;126;01;Stichting Cicero Zorggroep;Zorgcentrum  Schuttershof;plataan
+889008;126;02;Stichting Cicero Zorggroep;Zorgcentrum  Schuttershof;beuk
+889008;126;03;Stichting Cicero Zorggroep;Zorgcentrum  Schuttershof;wilg
+889008;126;04;Stichting Cicero Zorggroep;Zorgcentrum  Schuttershof;iep
+889008;126;05;Stichting Cicero Zorggroep;Zorgcentrum  Schuttershof;linde
+889008;126;06;Stichting Cicero Zorggroep;Zorgcentrum  Schuttershof;abeel
+889008;126;07;Stichting Cicero Zorggroep;Zorgcentrum  Schuttershof;gregoriushuis
+889008;1278;01;Stichting Cicero Zorggroep;Zorgcentrum 't Brook;Kasteel Rivieren
+889008;1278;02;Stichting Cicero Zorggroep;Zorgcentrum 't Brook;Kasteel Cortenbach/ Kasteel Terworm
+889008;1278;03;Stichting Cicero Zorggroep;Zorgcentrum 't Brook;Kasteel Puth/ Kasteel Cortenbach
+889008;1279;01;Stichting Cicero Zorggroep;Zorgcentrum Op den Toren;Agaat
+889008;1279;02;Stichting Cicero Zorggroep;Zorgcentrum Op den Toren;Smaragd
+889008;1279;03;Stichting Cicero Zorggroep;Zorgcentrum Op den Toren;Robijn
+889008;1279;04;Stichting Cicero Zorggroep;Zorgcentrum Op den Toren;Topaas
+889008;1281;01;Stichting Cicero Zorggroep;Zorgcentrum Pius;kasteelzicht
+889008;1281;02;Stichting Cicero Zorggroep;Zorgcentrum Pius;zorgafdeling Pius parterre
+889008;1281;03;Stichting Cicero Zorggroep;Zorgcentrum Pius;zorgafdeling Pius afd. 2
+889008;1281;04;Stichting Cicero Zorggroep;Zorgcentrum Pius;Ridder Hoenhof
+889008;2112;01;Stichting Cicero Zorggroep;Cicero Zorghuis ;Zorghuis
+889008;2231;01;Stichting Cicero Zorggroep;Huize d’Alzon ;Huize d'Alzon
+889008;1008;01;Stichting Cicero Zorggroep;Zorgcentrum Huize Louise;Parklaan
+889008;1008;02;Stichting Cicero Zorggroep;Zorgcentrum Huize Louise;Kerkplein
+889008;1008;03;Stichting Cicero Zorggroep;Zorgcentrum Huize Louise;Vijverpad
+889008;1008;04;Stichting Cicero Zorggroep;Zorgcentrum Huize Louise;Mergelweg
+889008;1008;05;Stichting Cicero Zorggroep;Zorgcentrum Huize Louise;Verzorgingshuis
+889008;1280;01;Stichting Cicero Zorggroep;Zorgcentrum Emmastaete;zorgafdeling  emmastaete 1/ De Pijler
+889008;1280;02;Stichting Cicero Zorggroep;Zorgcentrum Emmastaete;Verpleegafdeling Mijnzicht
+889008;1280;03;Stichting Cicero Zorggroep;Zorgcentrum Emmastaete;verpleegafdeling De Schacht
+889008;1282;01;Stichting Cicero Zorggroep;Zorgcentrum Elvira;zwaluw
+889008;1282;02;Stichting Cicero Zorggroep;Zorgcentrum Elvira;spreeuw
+889008;1282;03;Stichting Cicero Zorggroep;Zorgcentrum Elvira;merel
+889008;1282;04;Stichting Cicero Zorggroep;Zorgcentrum Elvira;vink
+889008;1282;05;Stichting Cicero Zorggroep;Zorgcentrum Elvira;leeuwerik
+889008;1283;01;Stichting Cicero Zorggroep;Zorgcentrum Ave Maria;Afdeling BG
+889008;1283;02;Stichting Cicero Zorggroep;Zorgcentrum Ave Maria;Afdeling 1
+889008;1283;03;Stichting Cicero Zorggroep;Zorgcentrum Ave Maria;Afdeling 2 verpleeghuisunit somatiek
+889008;1283;04;Stichting Cicero Zorggroep;Zorgcentrum Ave Maria;Afdeling 3 verpleeghuisunit pg
+889008;1285;01;Stichting Cicero Zorggroep;Zorgcentrum Aan de Bleek;verzorgingshuis afdeling Epen
+889008;1285;02;Stichting Cicero Zorggroep;Zorgcentrum Aan de Bleek;Verzorgingshuis afdeling Mechelen
+889008;1286;01;Stichting Cicero Zorggroep;Zorgcentrum Bronnenhof;BG
+889008;1286;02;Stichting Cicero Zorggroep;Zorgcentrum Bronnenhof;Etage 1
+889008;1286;03;Stichting Cicero Zorggroep;Zorgcentrum Bronnenhof;Etage 2
+889008;1286;04;Stichting Cicero Zorggroep;Zorgcentrum Bronnenhof;Etage 3
+889008;134;01;Stichting Cicero Zorggroep;Zorgcentrum Leontine;Klaver
+889008;134;02;Stichting Cicero Zorggroep;Zorgcentrum Leontine;Klaproos
+888217;521;01;Woonzorgcentrum Raffy Leystroom;Zorg zonder behandeling;Zorg zonder behandeling A
+888217;521;02;Woonzorgcentrum Raffy Leystroom;Zorg zonder behandeling;Zorg zonder behandeling B
+888217;521;03;Woonzorgcentrum Raffy Leystroom;Zorg zonder behandeling;Zorg zonder behandeling C
+888217;521;04;Woonzorgcentrum Raffy Leystroom;Zorg zonder behandeling;Zorg zonder behandeling D/Zorgwoningen
+888217;1277;01;Woonzorgcentrum Raffy Leystroom;Zorg met behandeling;Zorg met behandeling Raffy
+888217;2081;01;Woonzorgcentrum Raffy Leystroom;Zorgcentrum Lâle;Zorg met behandeling Lale
+888217;2232;01;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Chasse
+888217;2232;02;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG De Faam
+888217;2232;03;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Welten
+888217;2232;04;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Het Klokhuis
+888217;2232;05;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Schoolstraat
+888217;2232;06;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Mastbos
+888217;2232;07;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG De Rith
+888217;2232;08;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Weilust
+888217;2232;03;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Welten
+888217;2232;02;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG De Faam
+888217;2232;01;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Chasse
+888217;2232;01;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG Chasse
+888217;2232;07;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG De Rith
+888217;2232;07;Woonzorgcentrum Raffy Leystroom;De Leystroom;WG De Rith
+889652;2045;021;Meandergroep Zuid-Limburg;Verpleeghuis Lückerheide;Roos
+889652;2045;022;Meandergroep Zuid-Limburg;Verpleeghuis Lückerheide;Iris
+889652;2045;023;Meandergroep Zuid-Limburg;Verpleeghuis Lückerheide;Tulp
+889652;2045;024;Meandergroep Zuid-Limburg;Verpleeghuis Lückerheide;Lelie
+889652;2045;025;Meandergroep Zuid-Limburg;Verpleeghuis Lückerheide;Narcis
+889652;2045;026;Meandergroep Zuid-Limburg;Verpleeghuis Lückerheide;Anjer
+889652;2045;027;Meandergroep Zuid-Limburg;Verpleeghuis Lückerheide;Woonvormen
+889652;2047;003;Meandergroep Zuid-Limburg;Zorg- en Revalidatiecentrum Hambos;Afdeling 3
+889652;2047;004;Meandergroep Zuid-Limburg;Zorg- en Revalidatiecentrum Hambos;Afdeling 4
+889652;2047;005;Meandergroep Zuid-Limburg;Zorg- en Revalidatiecentrum Hambos;Afdeling 5
+889652;2047;006;Meandergroep Zuid-Limburg;Zorg- en Revalidatiecentrum Hambos;Afdeling 6
+889652;2048;013;Meandergroep Zuid-Limburg;Verpleeghuis De Dormig;Brandpoort
+889652;2048;014;Meandergroep Zuid-Limburg;Verpleeghuis De Dormig;Hagerhof
+889652;2048;015;Meandergroep Zuid-Limburg;Verpleeghuis De Dormig;Heihof
+889652;2048;016;Meandergroep Zuid-Limburg;Verpleeghuis De Dormig;Heugderhof
+889652;2048;017;Meandergroep Zuid-Limburg;Verpleeghuis De Dormig;Kakertshof
+889652;2048;018;Meandergroep Zuid-Limburg;Verpleeghuis De Dormig;Leenhof
+889652;2048;019;Meandergroep Zuid-Limburg;Verpleeghuis De Dormig;Nieuwhof
+889652;2048;020;Meandergroep Zuid-Limburg;Verpleeghuis De Dormig;Overste hof
+889652;2049;007;Meandergroep Zuid-Limburg;Heiveld;Irenestraat 7
+889652;2049;008;Meandergroep Zuid-Limburg;Heiveld;Irenestraat 9
+889652;2049;009;Meandergroep Zuid-Limburg;Heiveld;Irenestraat 11
+889652;2049;010;Meandergroep Zuid-Limburg;Heiveld;Maximastraat 10
+889652;2049;011;Meandergroep Zuid-Limburg;Heiveld;Maximastraat 6
+889652;2049;012;Meandergroep Zuid-Limburg;Heiveld;Maximastraat 12
+889652;2050;001;Meandergroep Zuid-Limburg;Barbarahoes;Carisborg
+889652;2050;002;Meandergroep Zuid-Limburg;Barbarahoes;Koempel
+889652;2158;011;Meandergroep Zuid-Limburg;Kapelhof;afdeling BG
+889652;2158;012;Meandergroep Zuid-Limburg;Kapelhof;afdeling 1
+889652;2158;013;Meandergroep Zuid-Limburg;Kapelhof;afdelin 2
+889652;2158;014;Meandergroep Zuid-Limburg;Kapelhof;afdeling 3
+889652;2159;015;Meandergroep Zuid-Limburg;Kling Nullet;woning 1 en 2
+889652;2159;016;Meandergroep Zuid-Limburg;Kling Nullet;woning 3 en 4
+889652;2159;017;Meandergroep Zuid-Limburg;Kling Nullet;woning 5 en 6
+889652;2160;018;Meandergroep Zuid-Limburg;Vroenhof;team 1 GP
+889652;2160;020;Meandergroep Zuid-Limburg;Vroenhof;Team 3 GP
+889652;2160;019;Meandergroep Zuid-Limburg;Vroenhof;team 2 transfer PG
+889652;2161;021;Meandergroep Zuid-Limburg;Bocholtz;oude Linde
+889652;2161;022;Meandergroep Zuid-Limburg;Bocholtz;Kastanje
+889652;2161;023;Meandergroep Zuid-Limburg;Bocholtz;Eik
+889652;2161;024;Meandergroep Zuid-Limburg;Bocholtz;Iep
+889652;2162;025;Meandergroep Zuid-Limburg;Eschveld;De Dotterbloem
+889652;2162;026;Meandergroep Zuid-Limburg;Eschveld;De Zinkviool
+889652;2163;027;Meandergroep Zuid-Limburg;Rode Beuk;De Eekhoorn
+889652;2163;028;Meandergroep Zuid-Limburg;Rode Beuk;De Veldmuis
+889652;2163;029;Meandergroep Zuid-Limburg;Rode Beuk;De Korenwolf
+889652;2164;030;Meandergroep Zuid-Limburg;Firenschat;Esdoornstraat
+889652;2164;031;Meandergroep Zuid-Limburg;Firenschat;Kastanjelaan
+889652;2164;032;Meandergroep Zuid-Limburg;Firenschat;Plataanplein
+889652;2164;033;Meandergroep Zuid-Limburg;Firenschat;Eijkenweg
+889652;2164;034;Meandergroep Zuid-Limburg;Firenschat;De wilg
+889652;2164;035;Meandergroep Zuid-Limburg;Firenschat;os heem,oude linde,sjatterhuske
+889652;2164;036;Meandergroep Zuid-Limburg;Firenschat;kappellerhuske,winselerhuske,maarhof
+889652;2165;037;Meandergroep Zuid-Limburg;Dokter Calshof;Streep
+889652;2165;038;Meandergroep Zuid-Limburg;Dokter Calshof;Eikske, Molt
+889652;2165;039;Meandergroep Zuid-Limburg;Dokter Calshof;Dormisch berg
+889652;2165;040;Meandergroep Zuid-Limburg;Dokter Calshof;De Baan
+889652;2165;041;Meandergroep Zuid-Limburg;Dokter Calshof;Team 2
+889652;2165;042;Meandergroep Zuid-Limburg;Dokter Calshof;Team 3
+889652;2166;043;Meandergroep Zuid-Limburg;Laethof;kloosterrade,Anstel, Burggraaf,Cortenbach
+889652;2166;044;Meandergroep Zuid-Limburg;Laethof;Terborg,windselerhof,terworm,erenstein
+889652;2167;005;Meandergroep Zuid-Limburg;Heereveld;TZ team A
+889652;2167;006;Meandergroep Zuid-Limburg;Heereveld;TZ team B
+889652;2167;007;Meandergroep Zuid-Limburg;Heereveld;Z+ team A
+889652;2167;008;Meandergroep Zuid-Limburg;Heereveld;Z+ team B
+889652;2167;001;Meandergroep Zuid-Limburg;Heereveld;vlinder puthuske
+889652;2167;002;Meandergroep Zuid-Limburg;Heereveld;anker puthuske
+889652;2167;003;Meandergroep Zuid-Limburg;Heereveld;hofke puthuske
+889652;2167;004;Meandergroep Zuid-Limburg;Heereveld;pG bungerveld puthuske
+889652;2179;009;Meandergroep Zuid-Limburg;Hoog Anstel;Team A
+889652;2179;010;Meandergroep Zuid-Limburg;Hoog Anstel;Team B
+888701;289;01;Zonnehuisgroep Vlaardingen;Locatie Zonnehuis, PG;Nova
+888701;289;02;Zonnehuisgroep Vlaardingen;Locatie Zonnehuis, PG;Castor
+888701;289;03;Zonnehuisgroep Vlaardingen;Locatie Zonnehuis, PG;Pollux
+888701;289;04;Zonnehuisgroep Vlaardingen;Locatie Zonnehuis, PG;Sirius
+888701;484;05;Zonnehuisgroep Vlaardingen;Locatie Drieën-Huysen, Noord;1e etage
+888701;484;06;Zonnehuisgroep Vlaardingen;Locatie Drieën-Huysen, Noord;2 etage
+888701;484;07;Zonnehuisgroep Vlaardingen;Locatie Drieën-Huysen, Noord;3e etage
+888701;484;08;Zonnehuisgroep Vlaardingen;Locatie Drieën-Huysen, Noord;4e etage
+888701;484;09;Zonnehuisgroep Vlaardingen;Locatie Drieën-Huysen, Noord;5e etage
+888701;1439;10;Zonnehuisgroep Vlaardingen;De Laurenburg;Laurenburg
+888701;1944;15;Zonnehuisgroep Vlaardingen;Adriaan Pauw;Adriaan Pauw 7
+888701;1944;16;Zonnehuisgroep Vlaardingen;Adriaan Pauw;Adriaan Pauw 8
+888701;1944;17;Zonnehuisgroep Vlaardingen;Adriaan Pauw;Adriaan Pauw 9
+888701;1946;18;Zonnehuisgroep Vlaardingen;De Dillenburg;Reva 1
+888701;1946;19;Zonnehuisgroep Vlaardingen;De Dillenburg;Reva 2
+888701;1946;20;Zonnehuisgroep Vlaardingen;De Dillenburg;Reva Stroke
+888701;2062;21;Zonnehuisgroep Vlaardingen;Locatie Zonnehuis, Somatiek;Mercurius
+888701;2062;22;Zonnehuisgroep Vlaardingen;Locatie Zonnehuis, Somatiek;Neptunus
+888701;2062;23;Zonnehuisgroep Vlaardingen;Locatie Zonnehuis, Somatiek;Pluto
+888701;2063;24;Zonnehuisgroep Vlaardingen;Locatie Drieën-Huysen, Zuid;afd. 1+2+3
+888701;2063;25;Zonnehuisgroep Vlaardingen;Locatie Drieën-Huysen, Zuid;afd. 4+5+6
+888701;2063;26;Zonnehuisgroep Vlaardingen;Locatie Drieën-Huysen, Zuid;afd.7+8+9
+889731;2233;EM Int;Present;Emma;Emma Interne zorg
+889731;2233;EM Int B;Present;Emma;Emma Intern Toren B
+889731;2233;EM Int C;Present;Emma;Emma Intern Toren C
+889731;2233;EM KSW;Present;Emma;KSW Emma
+889731;2233;MP;Present;Emma;KSW Meesplein
+889731;2233;MP B;Present;Emma;KSW Meesplein B
+889731;2233;MP C;Present;Emma;KSW Meesplein C
+889731;2233;MP D;Present;Emma;KSW Meesplein D
+889731;2234;GZ 1;Present;Graafzicht;Graafzicht Intern 1e etage
+889731;2234;GZ 2;Present;Graafzicht;Graafzicht intern 2de etage
+889731;2234;GZ BG;Present;Graafzicht;Graafzicht intern Begane Grond
+889731;2234;GZ KSW1;Present;Graafzicht;Graafzicht KSW 1
+889731;2234;GZ KSW2;Present;Graafzicht;Graafzicht KSW 2
+889731;2235;HA Int;Present;Hof van Ammers;Hof van Ammers Intern
+889731;2235;HA KSW;Present;Hof van Ammers;Hof van Ammers KSW
+889731;2236;OV Int1;Present;Open Vensters;Open Vensters intern 1
+889731;2236;OV Int2;Present;Open Vensters;Open Vensters Intern 2
+889731;2236;OV Int3;Present;Open Vensters;Open Vensters intern 3
+889731;2236;OV KSWM;Present;Open Vensters;Open Vensters KSW madelief
+889731;2236;OV KSWK;Present;Open Vensters;Open Vensters KSW Klaproos
+889731;2236;OV KSWL;Present;Open Vensters;Open Vensters KSW Lisdodde
+889731;2236;OV KSWF;Present;Open Vensters;Open Vensters KSW Fluitekruid
+889660;2086;E1;Zuyderland Zorgcentra en TZ;De Eghte;Bosserhoaf
+889660;2086;E2;Zuyderland Zorgcentra en TZ;De Eghte;Schrevenhoaf
+889660;2086;E3;Zuyderland Zorgcentra en TZ;De Eghte;Pepinushoaf
+889660;2086;E4;Zuyderland Zorgcentra en TZ;De Eghte;Leenderhoaf
+889660;2086;E5;Zuyderland Zorgcentra en TZ;De Eghte;Antonius
+889660;2086;E6;Zuyderland Zorgcentra en TZ;De Eghte;Pejjerhoes
+889660;2086;E7;Zuyderland Zorgcentra en TZ;De Eghte;Gebrookerhaof
+889660;2087;V1;Zuyderland Zorgcentra en TZ;Vastrada;Zonnehook
+889660;2087;V2;Zuyderland Zorgcentra en TZ;Vastrada;Raegeboog
+889660;2087;V3;Zuyderland Zorgcentra en TZ;Vastrada;Sjterrehemel
+889660;2087;V4;Zuyderland Zorgcentra en TZ;Vastrada;'t Hout
+889660;2088;L1;Zuyderland Zorgcentra en TZ;Lemborgh;De Wal
+889660;2088;L3;Zuyderland Zorgcentra en TZ;Lemborgh;'t Steegske
+889660;2088;L4;Zuyderland Zorgcentra en TZ;Lemborgh;'t Stroatje
+889660;2088;L2;Zuyderland Zorgcentra en TZ;Lemborgh;De Gats
+889660;2088;L5;Zuyderland Zorgcentra en TZ;Lemborgh;'t Heukske
+889660;2089;B4;Zuyderland Zorgcentra en TZ;De Baenje; Bnj Schwienswei
+889660;2089;B1;Zuyderland Zorgcentra en TZ;De Baenje;Bnj De Wieër
+889660;2089;B3;Zuyderland Zorgcentra en TZ;De Baenje;Bnj Meulenbaek
+889660;2089;B7;Zuyderland Zorgcentra en TZ;De Baenje;Bnj kol afd 4
+889660;2089;B8;Zuyderland Zorgcentra en TZ;De Baenje;Bnj Kol afd 5
+889660;2089;B2;Zuyderland Zorgcentra en TZ;De Baenje;Bnj Stadszicht
+889660;2089;B5;Zuyderland Zorgcentra en TZ;De Baenje;Bnj Kol afd 0/1
+889660;2089;B6;Zuyderland Zorgcentra en TZ;De Baenje;bnj Kol afd 2/3
+889660;2090;H1;Zuyderland Zorgcentra en TZ;Hoogstaete;afd 1 VZ
+889660;2090;H2;Zuyderland Zorgcentra en TZ;Hoogstaete;afd 2 VZ
+889660;2090;H3;Zuyderland Zorgcentra en TZ;Hoogstaete;Afd 3 VZ
+889660;2090;H4;Zuyderland Zorgcentra en TZ;Hoogstaete;afd 4 VZ
+889660;2090;H5;Zuyderland Zorgcentra en TZ;Hoogstaete;afd 5 VZ
+889660;2090;H6;Zuyderland Zorgcentra en TZ;Hoogstaete;KSW
+889660;2091;A1;Zuyderland Zorgcentra en TZ;Aldenhof;ALD Team 1
+889660;2091;A2;Zuyderland Zorgcentra en TZ;Aldenhof;ALD Team 2
+889660;2091;A3;Zuyderland Zorgcentra en TZ;Aldenhof;ALD KSW
+889660;2091;A4;Zuyderland Zorgcentra en TZ;Aldenhof;ALD zorgappartementen
+889660;2092;G1;Zuyderland Zorgcentra en TZ;Glana;Gla Biesenhof
+889660;2092;G2;Zuyderland Zorgcentra en TZ;Glana;Gla Hanenhof
+889660;2092;G3;Zuyderland Zorgcentra en TZ;Glana;Gla Kummenaederhof
+889660;2092;G4;Zuyderland Zorgcentra en TZ;Glana;Gla Heimstenraderhof
+889660;2092;G5;Zuyderland Zorgcentra en TZ;Glana;Gla Lutteraderhof
+889660;2092;G6;Zuyderland Zorgcentra en TZ;Glana;Rosengarten
+889660;2092;G7;Zuyderland Zorgcentra en TZ;Glana;Gla Athos
+889660;2092;G9;Zuyderland Zorgcentra en TZ;Glana;Gla Aramis
+889660;2092;G8;Zuyderland Zorgcentra en TZ;Glana;Gla Porthos
+889660;2092;G10;Zuyderland Zorgcentra en TZ;Glana;Gla Drossaert
+889660;2092;G11;Zuyderland Zorgcentra en TZ;Glana;Gla Coppenhagen
+889660;2092;G13;Zuyderland Zorgcentra en TZ;Glana;Gla Vus
+889660;2092;G14;Zuyderland Zorgcentra en TZ;Glana;Gla Vub
+889660;2092;G15;Zuyderland Zorgcentra en TZ;Glana;Gla Zilverlinde
+889660;2092;G12;Zuyderland Zorgcentra en TZ;Glana;Driepoel
+889534;2149;36212;Vivantes;Aelserhof;Aelserhof Verpleging
+889534;2149;36211;Vivantes;Aelserhof;Aelserhof Verzorging
+889534;2150;31211;Vivantes;Bunderhof;Bunderhof Zorgteam 1
+889534;2150;31212;Vivantes;Bunderhof;Bunderhof Zorgteam 2
+889534;2150;31213;Vivantes;Bunderhof;Bunderhof Zorgteam 3
+889534;2151;38211;Vivantes;La Famille;afdeling somatiek
+889534;2151;38212;Vivantes;La Famille;afdeling PG
+889534;2152;33211;Vivantes;Olympiastaete;Team intramurale zorg
+889534;2153;37211;Vivantes;Urmonderhof;Afd 1 somatiek
+889534;2153;37212;Vivantes;Urmonderhof;Verpleegunit
+889534;2154;32211;Vivantes;Bloemenhof;Unit
+889534;2154;32212;Vivantes;Bloemenhof;afdeling 1 somatiek
+889534;2154;32213;Vivantes;Bloemenhof;Afdeling 2 huiskamer
+889534;2155;39212;Vivantes;Franciscus;Baekerheuske
+889534;2155;39211;Vivantes;Franciscus;SBB
+889534;2156;35211;Vivantes;Moutheuvel;Zorgteam GV
+889534;2156;35213;Vivantes;Moutheuvel;Zorgteam 2
+889534;2156;35214;Vivantes;Moutheuvel;Zorgteam 3
+889534;2156;35215;Vivantes;Moutheuvel;Zorgteam 4
+889534;2157;34211;Vivantes;Oud Geleen;Zorgteam 1
+889534;2157;34212;Vivantes;Oud Geleen;Zorgteam 2
+889534;2157;34213;Vivantes;Oud Geleen;Zorgteam 3
+889534;2157;34214;Vivantes;Oud Geleen;Zorgteam 4
+889659;2070;103;Haagse Wijk- en Woonzorg;Vrederust West;Zomersingel
+889659;2070;104;Haagse Wijk- en Woonzorg;Vrederust West;Herfsthof
+889659;2071;202;Haagse Wijk- en Woonzorg;Moerwijk;1e etage
+889659;2071;203;Haagse Wijk- en Woonzorg;Moerwijk;2e etage
+889659;2071;201;Haagse Wijk- en Woonzorg;Moerwijk;Hofje van Weldam
+889659;2072;301;Haagse Wijk- en Woonzorg;De Schildershoek;Mondriaan
+889659;2072;305;Haagse Wijk- en Woonzorg;De Schildershoek;Vermeer
+889659;2072;304;Haagse Wijk- en Woonzorg;De Schildershoek;Rembrandt
+889659;2072;306;Haagse Wijk- en Woonzorg;De Schildershoek;Breughel
+889659;2072;302;Haagse Wijk- en Woonzorg;De Schildershoek;Picasso
+889659;2072;303;Haagse Wijk- en Woonzorg;De Schildershoek;van Gogh
+889659;2073;401;Haagse Wijk- en Woonzorg;De Stromenhof;Kleinschalig wonen
+889659;2074;003;Haagse Wijk- en Woonzorg;Op de Laan;2e etage
+889659;2074;004;Haagse Wijk- en Woonzorg;Op de Laan;3e etage
+889659;2074;005;Haagse Wijk- en Woonzorg;Op de Laan;4e etage
+889659;2074;001;Haagse Wijk- en Woonzorg;Op de Laan;Begane grond
+889659;2074;002;Haagse Wijk- en Woonzorg;Op de Laan;1e etage
+889659;2076;504;Haagse Wijk- en Woonzorg;Houtwijk;Robijn
+889659;2076;506;Haagse Wijk- en Woonzorg;Houtwijk;Smaragd
+889659;2076;501;Haagse Wijk- en Woonzorg;Houtwijk;Diamant
+889659;2076;502;Haagse Wijk- en Woonzorg;Houtwijk;Opaal
+889659;2076;503;Haagse Wijk- en Woonzorg;Houtwijk;Topaas
+889659;2077;604;Haagse Wijk- en Woonzorg;Zorghuis Dr. W. Drees;3e etage
+889659;2077;601;Haagse Wijk- en Woonzorg;Zorghuis Dr. W. Drees;BG
+889659;2077;602;Haagse Wijk- en Woonzorg;Zorghuis Dr. W. Drees;1e etage
+889659;2077;603;Haagse Wijk- en Woonzorg;Zorghuis Dr. W. Drees;2e etage
+889659;2077;605;Haagse Wijk- en Woonzorg;Zorghuis Dr. W. Drees;4e etage
+889659;2077;606;Haagse Wijk- en Woonzorg;Zorghuis Dr. W. Drees;5e etage
+889659;2078;701;Haagse Wijk- en Woonzorg;De Eshoeve;Albatros
+889659;2078;705;Haagse Wijk- en Woonzorg;De Eshoeve;Zilvermeeuw
+889659;2078;704;Haagse Wijk- en Woonzorg;De Eshoeve;Stormvogel
+889659;2078;703;Haagse Wijk- en Woonzorg;De Eshoeve;Strandloper
+889659;2078;702;Haagse Wijk- en Woonzorg;De Eshoeve;Zeezwaluw
+889659;2079;1004;Haagse Wijk- en Woonzorg;Ametisthorst;4e etage
+889659;2079;1001;Haagse Wijk- en Woonzorg;Ametisthorst;1e etage
+889659;2079;1002;Haagse Wijk- en Woonzorg;Ametisthorst;2e etage
+889659;2079;1003;Haagse Wijk- en Woonzorg;Ametisthorst;3e etage
+889659;2080;801;Haagse Wijk- en Woonzorg;Residentie;Zorgafdeling
+888209;714;131;Stichting Land van Horne;Witven - Someren;Somatiek
+889193;1777;V01;Surplus;Vredenbergh;Vredenbergh team 1
+889193;1777;V02;Surplus;Vredenbergh;Vredenbergh team 2
+888162;732;1;ActiVite;AgnesStaete;kleinschalig wonen
+888162;732;2;ActiVite;AgnesStaete;somatiek
+888162;1012;1;ActiVite;Zuidervaart;Zuidervaart
+888162;1947;1;ActiVite;Hof van Alkemade;Kleinschalig wonen
+888162;1947;2;ActiVite;Hof van Alkemade;Somatiek
+888162;1948;1;ActiVite;Noorderbrink;Noorderbrink
+888162;1948;2;ActiVite;Noorderbrink;Sassenoord
+888162;1949;2;ActiVite;Ommedijk;kleinschalig wonen
+888162;1949;1;ActiVite;Ommedijk;Somatiek
+888162;1950;1;ActiVite;Rietveld;cluster 1
+888162;1950;2;ActiVite;Rietveld;cluster 2
+888162;1950;3;ActiVite;Rietveld;cluster 3
+888162;1950;4;ActiVite;Rietveld;cluster 4
+888162;1952;1;ActiVite;Sassembourg;kleinschalig wonen
+888162;1952;2;ActiVite;Sassembourg;somatiek
+888162;2004;1;ActiVite;Hussonshoek;Kleinschalig wonen 
+889447;2296;01;Mosae Zorggroep;Licht en Liefde;Licht en Liefde
+889447;2296;01;Mosae Zorggroep;Licht en Liefde;Licht en Liefde
+889447;2297;SWV 2;Mosae Zorggroep;SWV;PG Bos
+889447;2297;SWV 1;Mosae Zorggroep;SWV;SWV somatiek
+889447;2297;SWV 3;Mosae Zorggroep;SWV;PG Land
+889447;2297;SWV 4;Mosae Zorggroep;SWV;PG Stad
+889447;2298;C05;Mosae Zorggroep;Campagne;Boterbloem/Lavendel
+889447;2298;C02;Mosae Zorggroep;Campagne;Beuk/Eik
+889447;2298;C09;Mosae Zorggroep;Campagne;Merel/Spreeuw
+889447;2298;C01;Mosae Zorggroep;Campagne;Spar/Linde
+889447;2298;C03;Mosae Zorggroep;Campagne;Populier/Kastanje
+889447;2298;C04;Mosae Zorggroep;Campagne;Viooltje/Anemoon
+889447;2298;C06;Mosae Zorggroep;Campagne;Klaproos/Madelief
+889447;2298;C07;Mosae Zorggroep;Campagne;Specht/Vink
+889447;2298;C08;Mosae Zorggroep;Campagne;Mus/Duif
