@@ -16,12 +16,12 @@ outputdir = Path('Output/')
 outputdir.mkdir(exist_ok=True)
 
 
-for i, (org, loc, ward_code) in enumerate(zip(df.Organisatie, df.Locatie, df.Ward_code_origineel)):
+for i, (org, ward_code) in enumerate(zip(df.Organisatie, df.Ward_code)):
 
     team_html_path = os.path.join(f'http://127.0.0.1:8000/posters/nov2019/{i+1}')
 
 
-    pdf_output = f'Output/Teamposter_{i+1}_{org}_{loc}_{ward_code}.pdf'
+    pdf_output = f'Output/Teamposter_{i+1}_{org}_{ward_code}.pdf'
 
 
     options = {
