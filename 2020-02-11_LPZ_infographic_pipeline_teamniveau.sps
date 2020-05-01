@@ -196,7 +196,12 @@ CTABLES
 
 
 
-* LTRIM(STRING(Type_Ward, 'F11'))
+
+
+
+
+
+
 
 
 * Type_ward.
@@ -327,7 +332,10 @@ AGGREGATE
   /OUTFILE='LPZ_teams'
   /BREAK=Ward_code
   /Measurementday=MAX(Measurementday) 
+  /Coordinator=MAX(Coordinator)
   /InstitutionID=MAX(InstitutionID) 
+  /IDresponsible=MAX(IDresponsible)
+  /Ward_code_origineel=MAX(Ward_code_origineel)
   /InstitutionForm_Type_Inst=MAX(InstitutionForm_Type_Inst) 
   /InstitutionForm_Mod_Qualityframework=MAX(InstitutionForm_Mod_Qualityframework) 
   /Type_Ward=MAX(Type_Ward) 
@@ -524,6 +532,114 @@ FORMATS D_QF_Prev_ACP_mean_team TO QF_Ward_PU_Discussed_mean_type_ward (F4.0).
 EXECUTE.
 
 
+STRING CIW (A255).
+COMPUTE CIW = CONCAT(Coordinator, IDresponsible, Ward_code_origineel).
+EXECUTE.
+
+* Identify Duplicate Cases.
+SORT CASES BY CIW(A).
+MATCH FILES
+  /FILE=*
+  /BY CIW
+  /FIRST=PrimaryFirst
+  /LAST=PrimaryLast.
+DO IF (PrimaryFirst).
+COMPUTE  MatchSequence=1-PrimaryLast.
+ELSE.
+COMPUTE  MatchSequence=MatchSequence+1.
+END IF.
+LEAVE  MatchSequence.
+FORMATS  MatchSequence (f7).
+COMPUTE  InDupGrp=MatchSequence>0.
+SORT CASES InDupGrp(D).
+MATCH FILES
+  /FILE=*
+  /DROP=PrimaryFirst InDupGrp MatchSequence.
+VARIABLE LABELS  PrimaryLast 'Indicator of each last matching case as Primary'.
+VALUE LABELS  PrimaryLast 0 'Duplicate Case' 1 'Primary Case'.
+VARIABLE LEVEL  PrimaryLast (ORDINAL).
+FREQUENCIES VARIABLES=PrimaryLast.
+EXECUTE.
+
+
+
+* Organisatie-, Locatie- en Teamnamen koppelen.
+PRESERVE.
+SET DECIMAL DOT.
+GET DATA  /TYPE=TXT
+  /FILE="teamnamen.txt"
+  /ENCODING='UTF8'
+  /DELCASE=LINE
+  /DELIMITERS=";"
+  /ARRANGEMENT=DELIMITED
+  /FIRSTCASE=2
+  /DATATYPEMIN PERCENTAGE=95.0
+  /VARIABLES=
+  Coordinator A255
+  IDresponsible A255
+  Ward_code_origineel A40
+  Organisatie AUTO
+  Locatie AUTO
+  Teamnaam AUTO
+  /MAP.
+RESTORE.
+
+CACHE.
+EXECUTE.
+DATASET NAME namen WINDOW=FRONT.
+
+
+STRING CIW (A255).
+COMPUTE CIW = CONCAT(Coordinator, IDresponsible, Ward_code_origineel).
+EXECUTE.
+
+* Identify Duplicate Cases.
+SORT CASES BY CIW(A).
+MATCH FILES
+  /FILE=*
+  /BY CIW
+  /FIRST=PrimaryFirst
+  /LAST=PrimaryLast.
+DO IF (PrimaryFirst).
+COMPUTE  MatchSequence=1-PrimaryLast.
+ELSE.
+COMPUTE  MatchSequence=MatchSequence+1.
+END IF.
+LEAVE  MatchSequence.
+FORMATS  MatchSequence (f7).
+COMPUTE  InDupGrp=MatchSequence>0.
+SORT CASES InDupGrp(D).
+MATCH FILES
+  /FILE=*
+  /DROP=PrimaryFirst InDupGrp MatchSequence.
+VARIABLE LABELS  PrimaryLast 'Indicator of each last matching case as Primary'.
+VALUE LABELS  PrimaryLast 0 'Duplicate Case' 1 'Primary Case'.
+VARIABLE LEVEL  PrimaryLast (ORDINAL).
+FREQUENCIES VARIABLES=PrimaryLast.
+EXECUTE.
+
+* Remove duplicates.
+SELECT IF PrimaryLast = 1.
+EXECUTE.
+
+* Dan koppelen. Doen alsof het one-to-many is zodat het een left join wordt.
+SORT CASES BY CIW.
+DATASET ACTIVATE namen.
+SORT CASES BY CIW.
+DATASET ACTIVATE LPZ_teams.
+MATCH FILES /FILE=*
+  /TABLE='namen'
+  /RENAME (Coordinator IDresponsible PrimaryLast Ward_code_origineel = d0 d1 d2 d3) 
+  /BY CIW
+  /DROP= d0 d1 d2 d3.
+EXECUTE.
+
+
+
+
+
+
+
 
 SAVE OUTFILE='Data\LPZ_teamdata.sav'
   /COMPRESSED.
@@ -543,3 +659,5 @@ SAVE TRANSLATE OUTFILE='Data\LPZ_teamdata.csv'
 
 
 DATASET CLOSE LPZ.
+
+

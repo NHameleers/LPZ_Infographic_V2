@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from posters.models import Lpz2019Teams
+from posters.models import Lpz2019Teams, Lpz2019Locaties, Lpz2019Organisaties
 from django.views import generic
 
 import pandas as pd
@@ -23,3 +23,12 @@ def index(request):
 
 class TeamDetailView(generic.DetailView):
     model = Lpz2019Teams
+
+class LocatieDetailView(generic.DetailView):
+    model = Lpz2019Locaties
+
+class OrganisatieDetailView(generic.DetailView):
+    model = Lpz2019Organisaties
+
+
+

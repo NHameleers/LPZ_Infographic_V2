@@ -14,7 +14,7 @@
     
     <link rel="stylesheet" href="{% static "css/style.css" %}">
     
-    <title>LPZ Team poster</title>
+    <title>LPZ Organisatie poster</title>
 
 </head>
 <body>
@@ -37,12 +37,10 @@
 
                     <!-- <img class="logo" src="{% static "images\lpz_logo_final.png" %}" alt=""> -->
     
-                    
-                    <h3 class="zero-bottom-margin">Locatie: {{ lpz2019teams.locatie }}</h3>
-                    <h3 id="team-name" class="zero-margin">Team: {{ lpz2019teams.teamnaam }}</h3>
-                    <h3 class="zero-margin">Datum: {{ lpz2019teams.measurementday}}</h3>
-                    <h3 class="zero-margin">Aantal cliënten: {{ lpz2019teams.aantal_patienten_in_team }}
-                         ({{ lpz2019teams.aantal_patienten_in_team_met_behandeling }} met behandeling)</h3>
+                    <h3 class="zero-bottom-margin">Organisatie: {{ lpz2019organisaties.organisatie }}</h3>
+                    <h3 class="zero-margin">Datum: {{ lpz2019organisaties.measurementday}}</h3>
+                    <h3 class="zero-margin">Aantal cliënten: {{ lpz2019organisaties.aantal_patienten_in_organisatie }}
+                         ({{ lpz2019organisaties.aantal_patienten_in_organisatie_met_behandeling }} met behandeling)</h3>
                                     
                 </div>
 
@@ -50,9 +48,6 @@
                     <img class="logo" src="{% static "images\lpz_logo_final.png" %}" alt="">
                 </div>
 
-                <div class="column col-100">
-                    <h3 class="zero-margin">Type afdeling: {{ lpz2019teams.type_ward }} ({{ lpz2019teams.afkorting_type_ward }})</h3>
-                </div>
             </div>
            
 
@@ -68,9 +63,9 @@
                                 <tr>
                                     <th></th>
                                     <th></th>
-                                    <th>Eigen team</th>
+                                    <th>Eigen organisatie</th>
                                     <th></th>
-                                    <th>Andere {{ lpz2019teams.afkorting_type_ward }}-teams</th>
+                                    <th>Andere LPZ-deelnemers</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -78,30 +73,30 @@
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_reanimeren.PNG" %}" alt=""></td>
                                     <td class="text-left">Reanimeren</td>
-                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_resusication_mean_team|floatformat:0 }}%</td>
+                                    <td class="percentage-blocks">{{ lpz2019organisaties.d_qf_acp_resusication_mean_organisatie|floatformat:0 }}%</td>
                                     <td> </td>
-                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_resusication_mean_type_ward|floatformat:0 }}%</td>
+                                    <td class="percentage-blocks">{{ lpz2019organisaties.d_qf_acp_resusication_mean_van_alle_orgs|floatformat:0 }}%</td>
                                 </tr>
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_infuus.PNG" %}" alt=""></td>
                                     <td class="text-left">Levensverlengende<br>behandelingen</td>
-                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_life_ending_treat_mean_team|floatformat:0}}%</td>
+                                    <td class="percentage-blocks">{{ lpz2019organisaties.d_qf_acp_life_ending_treat_mean_organisatie|floatformat:0}}%</td>
                                     <td> </td>
-                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_life_ending_treat_mean_type_ward|floatformat:0 }}%</td>
+                                    <td class="percentage-blocks">{{ lpz2019organisaties.d_qf_acp_life_ending_treat_mean_van_alle_orgs|floatformat:0 }}%</td>
                                 </tr>
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_ziekenhuis.PNG" %}" alt=""></td>
                                     <td class="text-left">Ziekenhuis-<br>opnamen</td>
-                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_hosp_adm_mean_team|floatformat:0 }}%</td>
+                                    <td class="percentage-blocks">{{ lpz2019organisaties.d_qf_acp_hosp_adm_mean_organisatie|floatformat:0 }}%</td>
                                     <td> </td>
-                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_hosp_adm_mean_type_ward|floatformat:0 }}%</td>
+                                    <td class="percentage-blocks">{{ lpz2019organisaties.d_qf_acp_hosp_adm_mean_van_alle_orgs|floatformat:0 }}%</td>
                                 </tr>
                                 <tr>
                                     <td class="img-blocks"><img class="table-img" src="{% static "images\trans_checklist.PNG" %}" alt=""></td>
                                     <td class="text-left">Anders</td>
-                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_other_mean_team|floatformat:0 }}%</td>
+                                    <td class="percentage-blocks">{{ lpz2019organisaties.d_qf_acp_other_mean_organisatie|floatformat:0 }}%</td>
                                     <td> </td>
-                                    <td class="percentage-blocks">{{ lpz2019teams.d_qf_acp_other_mean_type_ward|floatformat:0 }}%</td>
+                                    <td class="percentage-blocks">{{ lpz2019organisaties.d_qf_acp_other_mean_van_alle_orgs|floatformat:0 }}%</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -118,7 +113,7 @@
                     <div class="medicatie-info">
                         <div class="column col-100">
                             <h2>Medicatieveiligheid</h2>
-                            <h3 class="zero-margin">Zijn medicatiefouten multidisciplinair in het team besproken?</h3>
+                            <h3 class="zero-margin">Zijn medicatiefouten multidisciplinair in de teams besproken?</h3>
                             
                         </div>
 
@@ -126,39 +121,26 @@
 
                         <!-- TODO: Tabel symmetrisch maken -->
                         <div class="column col-67">
-                            <p class="text-right zero-bottom-margin">Andere {{ lpz2019teams.afkorting_type_ward }}-teams</p>
+                            <!-- <p class="text-right zero-bottom-margin">Andere LPZ-deelnemers</p> -->
                                 <table class="med-tabel">
                                     <thead>
                                         <tr>
+                                            <th>Eigen organisatie</th>
                                             <th></th>
-                                            <th></th>
-                                            <th></th>
+                                            <th>Andere LPZ-deelnemers</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="checkbox">
-                                                {% if lpz2019teams.qf_ward_errorsdiscussed == '1' %}
-                                                    <img class="symbol-img-small" src="{% static "images\check-mark-icon.jpg" %}" alt="">
-                                                {% elif lpz2019teams.qf_ward_errorsdiscussed == '0' %}
-                                                {% else %}
-                                                    ?
-                                                {% endif %}</td>
+                                            <td class="checkbox">{{ lpz2019organisaties.qf_ward_errorsdiscussed_mean_organisatie|floatformat:0 }}%</td>
                                             <td>Ja</td>
-                                            <td class="checkbox">{{ lpz2019teams.qf_ward_errorsdiscussed_mean_type_ward|floatformat:0 }}%</td>
+                                            <td class="checkbox">{{ lpz2019organisaties.qf_ward_errorsdiscussed_mean_van_alle_orgs|floatformat:0 }}%</td>
                                         </tr>
 
                                         <tr>
-                                            <td class="checkbox ">
-                                                {% if lpz2019teams.qf_ward_errorsdiscussed == '0' %}
-                                                    <img class="symbol-img-small" src="{% static "images\check-mark-icon.jpg" %}" alt="">
-                                                {% elif lpz2019teams.qf_ward_errorsdiscussed == '1' %}
-                                                {% else %}
-                                                    ?
-                                                {% endif %}
-                                            </td>
+                                            <td class="checkbox ">{{ 100|sub:lpz2019organisaties.qf_ward_errorsdiscussed_mean_organisatie|floatformat:0 }}%</td>
                                             <td>Nee</td>
-                                            <td class="checkbox">{{ 100|sub:lpz2019teams.qf_ward_errorsdiscussed_mean_type_ward|floatformat:0 }}%</td>
+                                            <td class="checkbox">{{ 100|sub:lpz2019organisaties.qf_ward_errorsdiscussed_mean_van_alle_orgs|floatformat:0 }}%</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -174,14 +156,14 @@
                         </div>
 
                         <div class="column col-40 text-center">
-                            <p class="zero-margin">Eigen team</p>
+                            <p class="zero-margin">Eigen organisatie</p>
                             
-                            <img class="medicatie-pie border-radius-50" src="{% static "" %}images\team\{{lpz2019teams.pk}}\pypie_team_med.png" alt="">
+                            <img class="medicatie-pie border-radius-50" src="{% static "" %}images\organisatie\{{lpz2019organisaties.pk}}\pypie_team_med.png" alt="">
                         </div>     
                         <div class="column col-40 text-center">
-                            <p class="zero-margin">% bij andere<br>{{ lpz2019teams.afkorting_type_ward }}-teams</p>
+                            <p class="zero-margin">Andere <br>LPZ-deelnemers</p>
                             
-                            <img class="medicatie-pie-ander border-radius-50" src="{% static "" %}images\team\{{lpz2019teams.pk}}\pypie_ward_med.png" alt="">
+                            <img class="medicatie-pie-ander border-radius-50" src="{% static "" %}images\organisatie\{{lpz2019organisaties.pk}}\pypie_ward_med.png" alt="">
                         </div>
                         <div class=column col-20></div>
 
@@ -214,36 +196,36 @@
 
                     <table class="eten-tabel">
                         <thead>
-                            <th>Eigen team</th>
+                            <th>Eigen organisatie</th>
                             <th></th>
-                            <th>Andere {{ lpz2019teams.afkorting_type_ward }}-teams</th>
+                            <th>Andere LPZ-deelnemers</th>
                         </thead>
                         <tbody>
 
                             <tr>
-                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_specific_mean_team|floatformat:0 }}%</td>
+                                <td class="">{{ lpz2019organisaties.d_qf_nut_foodpreferences_specific_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Bepaald eten & drinken</td>
-                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_specific_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_nut_foodpreferences_specific_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_offering_mean_team|floatformat:0 }}%</td>
+                                <td class="">{{ lpz2019organisaties.d_qf_nut_foodpreferences_offering_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Hoeveelheid, frequentie, vorm</td>
-                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_offering_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_nut_foodpreferences_offering_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_support_mean_team|floatformat:0 }}%</td>
+                                <td class="">{{ lpz2019organisaties.d_qf_nut_foodpreferences_support_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Gewenste hulp bij eten & drinken</td>
-                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_support_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_nut_foodpreferences_support_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_time_mean_team|floatformat:0 }}%</td>
+                                <td class="">{{ lpz2019organisaties.d_qf_nut_foodpreferences_time_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Tijd & plaats</td>
-                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_time_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_nut_foodpreferences_time_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="">{{ lpz2019teams.d_qf_nut_foodpreferences_other_mean_team|floatformat:0 }}%</td>
+                                <td class="">{{ lpz2019organisaties.d_qf_nut_foodpreferences_other_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Anders</td>
-                                <td>{{ lpz2019teams.d_qf_nut_foodpreferences_other_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_nut_foodpreferences_other_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <!-- <tr>
                                 <td class=""></td>
@@ -274,13 +256,13 @@
 
                         <div class="column col-50 text-center">
                             
-                            <img class="decubitus-pie border-radius-50" src="{% static "" %}images\team\{{lpz2019teams.pk}}\pypie_team_dec.png" alt="">
-                            <p class="zero-margin">Eigen team</p>
+                            <img class="decubitus-pie border-radius-50" src="{% static "" %}images\organisatie\{{lpz2019organisaties.pk}}\pypie_team_dec.png" alt="">
+                            <p class="zero-margin">Eigen organisatie</p>
                         </div>
                         <div class="column col-50">
                             
-                            <img class="decubitus-pie-ander border-radius-50" src="{% static "" %}images\team\{{lpz2019teams.pk}}\pypie_ward_dec.png" alt="">
-                            <p class="zero-margin">Andere {{ lpz2019teams.afkorting_type_ward }} teams</p>
+                            <img class="decubitus-pie-ander border-radius-50" src="{% static "" %}images\organisatie\{{lpz2019organisaties.pk}}\pypie_ward_dec.png" alt="">
+                            <p class="zero-margin">Andere LPZ-deelnemers</p>
                         </div>
 
                     </div>
@@ -291,7 +273,7 @@
                     <div class="casus-info">
                         <div class="column col-100">
                             <h2>Casuïstiekbespreking</h2>
-                            <h3 class="zero-margin">Heeft er binnen het team een casuïstiekbespreking (MDO) decubitus plaatsgevonden?</h3>
+                            <h3 class="zero-margin">Binnen hoeveel teams heeft een casuïstiekbespreking (MDO) decubitus plaatsgevonden?</h3>
                         </div>
                         <div class="column col-100 beetje-top-margin">
                             <div class="column col-33 text-center">
@@ -300,21 +282,20 @@
                             </div>
                             <div class="column col-67">
                                 <svg width="80mm" height="40mm">
-                                    <text x="11mm" y="5mm">Eigen team</text>
+                                    <text x="11mm" y="5mm">Eigen organisatie</text>
                                     <circle cx="41mm" cy="27mm" r="12mm" fill="#ABD1FF" stroke="#585A4C" stroke-width="1"></circle>
-                                    <text class="bubble-text" x="41mm" y="27mm" text-anchor="middle" dominant-baseline="middle">{{ lpz2019teams.qf_ward_pu_discussed_mean_type_ward|floatformat:0 }}%</text>
+                                    <text class="bubble-text" x="41mm" y="27mm" text-anchor="middle" dominant-baseline="middle">{{ lpz2019organisaties.qf_ward_pu_discussed_mean_van_alle_orgs|floatformat:0 }}%</text>
                                     <circle cx="20mm" cy="20mm" r="12mm" fill="#00A2DB" stroke="black" stroke-width="1"></circle>
                                     <text class="bubble-text" x="20mm" y="20mm" text-anchor="middle" dominant-baseline="middle">
-                                        {% if lpz2019teams.qf_ward_pu_discussed == '1' %}
-                                            Ja
-                                        {% elif lpz2019teams.qf_ward_pu_discussed == '0' %}
-                                            Nee
-                                        {% else %}
+                                        {% if lpz2019organisaties.qf_ward_pu_discussed_mean_organisatie == ' ' %}
                                             n.v.t.
+                                        {% else %}
+                                        {{ lpz2019organisaties.qf_ward_pu_discussed_mean_organisatie|floatformat:0 }}%
                                         {% endif %}
                                     </text>
                                     <text x="55mm" y="15mm">% JA andere</text>
-                                    <text x="55mm" y="20mm">{{ lpz2019teams.afkorting_type_ward }}-teams</text>
+                                    <text x="55mm" y="20mm">LPZ-deelnemers</text>
+
                                 </svg>
                             </div>
                         </div>
@@ -357,60 +338,60 @@
                             <table class="vrijheid-tabel">
                                 <thead>
                                     <tr>
-                                        <th>Eigen team</th>
+                                        <th>Eigen organisatie</th>
                                         <th></th>
-                                        <th>Andere {{ lpz2019teams.afkorting_type_ward }}-teams</th>
+                                        <th>Andere LPZ-deelnemers</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     <tr>
-                                        <td class="" width="25%">{{ lpz2019teams.d_qf_rest_mechanical_mean_team|floatformat:0 }}%</td>
+                                        <td class="" width="25%">{{ lpz2019organisaties.d_qf_rest_mechanical_mean_organisatie|floatformat:0 }}%</td>
                                         <td width="50%">Mechanisch<br>
                                             <span class="small-font">(bijv. bedhekken / tafelblad)</span>
                                         </td>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_mechanical_mean_type_ward|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_mechanical_mean_van_alle_orgs|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td width="25%" class="">{{ lpz2019teams.d_qf_rest_electronic_mean_team|floatformat:0 }}%</td>
+                                        <td width="25%" class="">{{ lpz2019organisaties.d_qf_rest_electronic_mean_organisatie|floatformat:0 }}%</td>
                                         <td>Elektronisch<br>
                                             <span class="small-font">(bijv. alarm / camera / sensor)</span>
                                         </td>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_electronic_mean_type_ward|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_electronic_mean_van_alle_orgs|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_physical_mean_team|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_physical_mean_organisatie|floatformat:0 }}%</td>
                                         <td>Fysiek<br>
                                             <span class="small-font">(iemand in bedwang houden)</span>
                                         </td>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_physical_mean_type_ward|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_physical_mean_van_alle_orgs|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_supervision_mean_team|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_supervision_mean_organisatie|floatformat:0 }}%</td>
                                         <td>Eén op één toezicht</td>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_supervision_mean_type_ward|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_supervision_mean_van_alle_orgs|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td width="25%" class="">{{ lpz2019teams.d_qf_rest_pharmacologic_mean_team|floatformat:0 }}%</td>
+                                        <td width="25%" class="">{{ lpz2019organisaties.d_qf_rest_pharmacologic_mean_organisatie|floatformat:0 }}%</td>
                                         <td width="50%">Farmacologisch</td>
-                                        <td width="25%" class="">{{ lpz2019teams.d_qf_rest_pharmacologic_mean_type_ward|floatformat:0 }}%</td>
+                                        <td width="25%" class="">{{ lpz2019organisaties.d_qf_rest_pharmacologic_mean_van_alle_orgs|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_psych_mean_team|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_psych_mean_organisatie|floatformat:0 }}%</td>
                                         <td>Psychologisch<br>
                                             <span class="small-font">(bijv. dwingend spreken)</span>
                                         </td>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_psych_mean_type_ward|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_psych_mean_van_alle_orgs|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_seclusion_mean_team|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_seclusion_mean_organisatie|floatformat:0 }}%</td>
                                         <td>Afzondering</td>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_seclusion_mean_type_ward|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_seclusion_mean_van_alle_orgs|floatformat:0 }}%</td>
                                     </tr>
                                     <tr>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_other_rest_mean_team|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_other_rest_mean_organisatie|floatformat:0 }}%</td>
                                         <td>Overig</td>
-                                        <td class="">{{ lpz2019teams.d_qf_rest_other_rest_mean_type_ward|floatformat:0 }}%</td>
+                                        <td class="">{{ lpz2019organisaties.d_qf_rest_other_rest_mean_van_alle_orgs|floatformat:0 }}%</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -430,36 +411,36 @@
 
                     <table class="continentie-tabel">
                         <thead>
-                            <th>Eigen team</th>
+                            <th>Eigen organisatie</th>
                             <th></th>
-                            <th>Andere {{ lpz2019teams.afkorting_type_ward }}-teams</th>
+                            <th>Andere LPZ-deelnemers</th>
                         </thead>
                         <tbody>
 
                             <tr>
-                                <td class="checkbox">{{ lpz2019teams.d_qf_inc_toiletingplan_preferences_mean_team|floatformat:0 }}%</td>
+                                <td class="checkbox">{{ lpz2019organisaties.d_qf_inc_toiletingplan_preferences_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Voorkeuren & gewoontes</td>
-                                <td>{{ lpz2019teams.d_qf_inc_toiletingplan_preferences_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_inc_toiletingplan_preferences_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="checkbox">{{ lpz2019teams.d_qf_inc_toiletingplan_independent_mean_team|floatformat:0 }}%</td>
+                                <td class="checkbox">{{ lpz2019organisaties.d_qf_inc_toiletingplan_independent_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Ondersteuning zelfstandige toiletgang</td>
-                                <td>{{ lpz2019teams.d_qf_inc_toiletingplan_independent_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_inc_toiletingplan_independent_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="checkbox">{{ lpz2019teams.d_qf_inc_toiletingplan_support_mean_team|floatformat:0 }}%</td>
+                                <td class="checkbox">{{ lpz2019organisaties.d_qf_inc_toiletingplan_support_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Benodigde hulp bij toiletgang</td>
-                                <td>{{ lpz2019teams.d_qf_inc_toiletingplan_support_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_inc_toiletingplan_support_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="checkbox">{{ lpz2019teams.d_qf_inc_toiletingplan_materials_mean_team|floatformat:0 }}%</td>
+                                <td class="checkbox">{{ lpz2019organisaties.d_qf_inc_toiletingplan_materials_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Passend gebruik incontinentiematerialen</td>
-                                <td>{{ lpz2019teams.d_qf_inc_toiletingplan_materials_mean_team|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_inc_toiletingplan_materials_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <tr>
-                                <td class="checkbox">{{ lpz2019teams.d_qf_inc_toiletingplan_other_mean_team|floatformat:0 }}%</td>
+                                <td class="checkbox">{{ lpz2019organisaties.d_qf_inc_toiletingplan_other_mean_organisatie|floatformat:0 }}%</td>
                                 <td>Anders</td>
-                                <td>{{ lpz2019teams.d_qf_inc_toiletingplan_other_mean_type_ward|floatformat:0 }}%</td>
+                                <td>{{ lpz2019organisaties.d_qf_inc_toiletingplan_other_mean_van_alle_orgs|floatformat:0 }}%</td>
                             </tr>
                             <!-- <tr>
                                 <td class="checkbox"></td>

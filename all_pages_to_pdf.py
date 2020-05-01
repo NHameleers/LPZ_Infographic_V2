@@ -5,24 +5,52 @@ import os
 from pathlib import Path
 import pandas as pd
 
+import sqlite3
+
 # from PIL import Image
 from PIL import Image as PILI
 from wand.image import Image
 
-df = pd.read_csv('Data/LPZ_teamdata.csv')
-
-outputdir = Path('Output/')
-
-outputdir.mkdir(exist_ok=True)
+import sys
 
 
-for i, (org, ward_code) in enumerate(zip(df.Organisatie, df.Ward_code)):
+unit_of_analysis = ''
 
-    team_html_path = os.path.join(f'http://127.0.0.1:8000/posters/nov2019/{i+1}')
+if len(sys.argv) < 2:
+    print("Usage: python all_teampages_to_pdf.py unit_of_analysis")
+    print("Unit of analysis can be one of: team, locatie, organisatie")
+    sys.exit(1)
+elif len(sys.argv) > 2:
+    print("Usage: python all_teampages_to_pdf.py unit_of_analysis")
+    print("Unit of analysis can be one of: team, locatie, organisatie")
+    sys.exit(1)
+else:
+    unit_of_analysis = sys.argv[1]
 
 
-    pdf_output = f'Output/Teamposter_{i+1}_{org}_{ward_code}.pdf'
+conn = sqlite3.connect('TeamInfographics/db.sqlite3')  # pass your db url
 
+df = pd.read_sql(f'SELECT * FROM Lpz2019{unit_of_analysis.title()}s', conn)
+
+outputdir = f'Output/{unit_of_analysis}'
+
+Path(outputdir).mkdir(exist_ok=True)
+
+
+for i in range(df.shape[0]):
+
+    team_html_path = os.path.join(f'http://127.0.0.1:8000/posters/nov2019/{unit_of_analysis}/{i+1}')
+
+    # not such an elegant way, but since the length of the df changes with unit of analysis
+    #  this is the best I can come up with now
+
+    pdf_output_base = f'{outputdir}/poster_{i+1}_{df["Organisatie"][i]}'
+    if unit_of_analysis == 'locatie':
+        pdf_output_base = f'{pdf_output_base}_{df["Locatie"][i].replace("/", "-")}'
+    elif unit_of_analysis == 'team':
+        pdf_output_base = f'{pdf_output_base}_{df["Ward_code_origineel"].replace("/", "-")}'
+
+    pdf_output = f'{pdf_output_base}.pdf'
 
     options = {
     'page-size': 'A3',
