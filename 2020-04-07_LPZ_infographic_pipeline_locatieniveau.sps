@@ -4,7 +4,7 @@ CD "E:\2020_01_06_Selectie_backup_I-schijf\LPZ\Infographic_2.0".
 
 * TODO: Als je de syntax wil runnen/gebruiken, dan bestandsnaam aanpassen.
 GET
-  FILE='NL2019NOV_total.sav'.
+  FILE='NL2019NOV_total_new.sav'.
 DATASET NAME LPZ WINDOW=FRONT.
 
 
@@ -163,10 +163,10 @@ FREQUENCIES Type_Ward.
 
 * Patienten verwijderen die D_ZZP_03 hebben.
 * D_ZZP_03 heeft ook missende waarden. Dit zijn de patienten die niet mee doen (zie ook G_pat_part).
-FREQUENCIES D_ZZP_03.
-SELECT IF D_ZZP_03 = 0.
-EXECUTE.
-FREQUENCIES D_ZZP_03.
+ * FREQUENCIES D_ZZP_03.
+ * SELECT IF D_ZZP_03 = 0.
+ * EXECUTE.
+ * FREQUENCIES D_ZZP_03.
 
 
 
@@ -259,6 +259,16 @@ EXECUTE.
 MISSING VALUES QF_Ward_ErrorsDiscussed QF_Ward_PU_Discussed (97).
 
 
+* TOEGEVOEGD OM CIJFERS VOLGENS DASHBOARD-METHODE TE BEREKENEN.
+* De noemer voor een aantal variabelen (bijv ACP) moet het totale aantal patienten zijn, ipv het aantal patienten die op zijn minst bij een van de categorieen een ja heeft staan.
+* Volgens mij is een simpele en dynamische manier om dit te bereiken om de missende waarden te vervangen door nullen, zodat deze worden meegeteld bij het berekenen van het gemiddelde.
+DO IF D_QF_Prev_ACP = 0.
+COMPUTE D_QF_ACP_resusication =0.
+COMPUTE D_QF_ACP_life_ending_treat = 0.
+COMPUTE D_QF_ACP_hosp_adm = 0.
+COMPUTE D_QF_ACP_other = 0.
+END IF.
+EXECUTE.
 
 
 * EDITED VOOR LOCATIE.

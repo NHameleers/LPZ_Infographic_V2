@@ -71,7 +71,11 @@ def create_pie(val, teamnr, team='team', size='small', topic='dec',
         fig, ax = plt.subplots()
         val = float(val)
         ax.pie([val, pie_base-val], colors=colors, startangle=90, counterclock=False)
-        val_rounded = int(round(val, 0))
+        
+        val_rounded = round(val, 1) # 1 decimaal voor decubitus
+        if topic == 'med':
+            val_rounded = int(round(val, 0)) # maar geen decimalen voor medicatiereview
+        
         ax.annotate(f'{val_rounded}%'.replace('.', ','), (0.05, -.2), fontsize=fontsize, ha='center', fontproperties=prop)
         fig.savefig(f'{outputdir}/{teamnr}/pypie_{team}_{topic}.png', transparent=True)    
 

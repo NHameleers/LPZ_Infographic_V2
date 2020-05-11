@@ -4,12 +4,16 @@ Voorbereidingen
 
 SPSS syntax runnen om teamdata te creeren
 
-Data in database zetten met:
+Gebruik environment:
+conda activate lpz
+
+
+Data in database zetten met (in map TeamInfographics):
 python data_to_db.py
 
 
 
-Model van data naar models.py met:
+Als models.py een update nodig heeft: Model van data naar models.py met:
 python manage.py inspectdb LPZ2019Teams > posters/models.py
 OF BIJ MEERDERE NIVEAUS VAN ANALYSE (TEAM-LOCATIE-ORG):
 python manage.py inspectdb > posters/models.py
